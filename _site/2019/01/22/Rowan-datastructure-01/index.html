@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>data structure 01</title>
+    <meta name="description" content="  Gerneric typeGerneric typepeople = new ArrayList(),new ArrayList&lt;student&gt;();its important because it’s specific no need for debugger.">
+    
+    <link rel="shortcut icon" href="favicon.ico" >
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif" >    
+    <!-- original favicon <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    // <link rel="icon" href="/favicon.ico?" type="image/x-icon"> -->    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/TmmGeekBlog/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/TmmGeekBlog/2019/01/22/Rowan-datastructure-01/">
+    <link rel="alternate" type="application/rss+xml" title="TmmGeek" href="http://localhost:4000/TmmGeekBlog/feed.xml ">
+
+
+
+    <script>
+    // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89660816-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/TmmGeekBlog/" class="brand">TmmGeek</a>
+        <small>Artificial Intelligence and Big Data student</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/TmmGeekBlog/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>data structure 01</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2019-01-22
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/TmmGeekBlog/category/#Rowan" title="Category: Rowan" rel="category">Rowan</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#data_structure" title="Tag: data_structure" rel="tag">data_structure</a-->
+        <a href="/TmmGeekBlog/tag/#data_structure" title="Tag: data_structure" rel="tag">data_structure</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#gerneric-type" id="markdown-toc-gerneric-type">Gerneric type</a></li>
+  <li><a href="#iterators" id="markdown-toc-iterators">iterators</a></li>
+</ul>
+
+<h3 id="gerneric-type">Gerneric type</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>people = new ArrayList(),
+
+new ArrayList&lt;student&gt;();
+</code></pre></div></div>
+
+<p>its important because it’s specific no need for debugger.</p>
+
+<h3 id="iterators">iterators</h3>
+<p>allow you to step through.</p>
+
+<p>a collection (list, set, …)</p>
+
+<p>its function</p>
+
+<ul>
+ <li>efficienty&lt;\li&gt;
+ <li>for set: no get method&lt;\li&gt;
+ <li>selective remove value&lt;\li&gt;
+&lt;\ul&gt;
+
+for loop can work, but not selectively. (for loop is iterator beyond the scene)
+
+```
+for(student s: people){
+    ...
+}
+```
+
+```
+Iterator <student> it = people.iterator(); \\ iterator is refering to the collection of the people.
+while (it.hasNext())
+{student s = it.next();
+if (s.gpa()&lt;2.0)
+it.remove(); \\ use the iterator to remove. do not call it.next twice inside the loop.
+}
+```
+
+(note:student here is generic type. )
+
+
+
+### List
+
+mylist.get(3)
+myList.set(4,"joe")
+
+```
+myList.add("jim") \\ can be added on, it grows bigger.
+
+myList.add(0, "join") \\ assigned to the 0 position, everything else is shifted.
+
+myList.remove(4) \\ the list shring.
+```
+*(note: all 3 above can't be applied on array, because array can't be resized)*
+
+### Array
+
+```
+myArray[3]
+myArray[4] = "joe" // use assignment
+```
+array and list use different syntax, but the same thing.
+
+Array is not resizable, once size is set, it can't be changed. (need to be predetermined)
+
+### Debugger
+
+1: Step[over]-&gt;Run
+called method at full
+speed.
+
+2: stepInto -&gt; Pause in
+called method.
+
+3: continue, or resume. Run at full speed until breakpoint.
+
+
+### wrapper classes
+
+|primitive type|wrapper class|
+|:---:|:---:|
+|in|Integer|
+|char|Character|
+|short|Short|
+|long|Long|
+|double|Double|
+
+#### the main use of wrapper class in this course.
+
+new ArrayList<Integer>()
+grades.add(90); // autoboxing
+int g=grades.get(3); auto-unboxing, the get method takes the integer, unbox it and then store it in the new variable 'g'.
+
+### Comparison
+
+```
+String student; // student is an object, because String (capitalized)
+
+if(student == "jim")...// don't do it this way.
+if(student.equals("jim")) // do it this way, points will be taken off if I use the lousy one.
+```
+note: read the comment from the above code block.
+
+*In general, how do you remember when to use `==` and `.equal`?*
+
+* use `==` when
+
+1: comparing primitives.
+`int x;` // x is a primitive, because it begins with a lower case letter(int)
+e.g `if (x==17)`
+
+2: comparing references
+
+`if(student == null)`
+
+* use .equal when comparing objects.
+
+`if (student1.equals(students2))`
+
+*note: every class is subclass of an object*
+
+
+### diagram
+
+int x;
+x = 17;                      x(17)
+Student s,s2;               s(null)   s is a reference.     s2
+                                |                           |
+                                V                           V
+s = new Student("jim");       Student                    student    
+                            (name "jim")                name("jim")                        
+s2 = new Student("jim");                                if(s==s2)  false
+                                                        if (s.equals(s2))  true    
+
+### LinkedList Arraylist                                 
+
+anything(methods) you can do with LinkedList can be done on ArrayList.
+both are lists.
+
+then why it's necessary to have the two then?
+
+because it has to do with efficiency.
+
+
+#### ArrayList VS LinkedList
+
+`add(object)`
+`add(int, object)`
+`remove(int)`
+
+*LinkedList is faster*
+
+
+
+`get(int)`
+`set(int,object)`
+
+*ArrayList is faster*
+
+*(memorize the above)*
+
+do not use the wrong list or credits will be taken away in this course.
+
+### Program to an *interface whenever* possible.
+
+Interface - class, but no
+
+* method bodies,
+
+* signatures only.
+
+* cannot be instantiated
+
+
+```
+ArrayList<student> roster
+    = new ArrayList<student>()
+    roster.add(....);
+    m1(roster);
+
+void m1(ArrayList<student r="">){
+    r.get(0);
+        :
+        :
+    m2(r)
+}   
+
+
+void m2 (ArrayList<student> r){
+    r.add(...);
+       :
+       :
+    re.remove(17);
+}
+```
+the above is not efficient, a LinkedList is better.
+
+instead, we use interface.
+
+declare student as `List`
+
+```
+List<student> roster
+    = new List<student>()
+    roster.add(....);
+    m1(roster);
+
+void m1(List<student r="">){
+    r.get(0);
+        :
+        :
+    m2(r)
+}   
+
+
+void m2 (List<student> r){
+    r.add(...);
+       :
+       :
+    re.remove(17);
+}
+```
+changed to a List it will still work.
+
+now change it to *interface*
+
+```
+List <student> roster
+    = new LinkedList<student>()
+    roster.add(....);
+    m1(roster);
+
+void m1(List<student r="">){
+    r.get(0);
+        :
+        :
+    m2(r)
+}   
+
+
+void m2 (Interface List<student> r){
+    r.add(...);
+       :
+       :
+    re.remove(17);
+}
+```
+
+### Diagram
+
+Interface(List) -&gt; Arraylist
+    |
+    V
+LinkedList
+</student></student></student></student></student></student></student></student></student></student></student></student></Integer></student></li></li></li></ul>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/TmmGeekBlog/2019/01/21/github/">github prep course</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/TmmGeekBlog/2019/01/23/java/">Java</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="http://localhost:4000/2019/01/22/Rowan-datastructure-01/" data-title="data structure 01" data-url="http://localhost:4000/2019/01/22/Rowan-datastructure-01/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {
+        short_name: "tmmgeek"
+    };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/TmmGeekBlog/js/pageContent.js " charset="utf-8"></script>
+<!-- MathJax markdown script -->
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             Computer and Math related 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/JizongL" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:2015rpro@gmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+            <a href="http://weibo.com/ΤmmGeek" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a>  
+            <a href="https://www.zhihu.com/people/TmmGeek" title="Zhihu"><i class="iconfont icon-daoruzhihu"></i></a>  
+            <a href="https://twitter.com/JizongLiang" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>  
+            <a href="https://www.facebook.com/jizong.liang" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+            <a href="https://www.linkedin.com/in/jizongliang" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  
+            <a href=" https://dribbble.com/JizongLiang" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> 
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" class="scroll">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src="/TmmGeekBlog /js/main.js " charset="utf-8"></script>
+    <script src="/TmmGeekBlog /js/scroll.min.js " charset="utf-8"></script>
+  </body>
+
+</html>

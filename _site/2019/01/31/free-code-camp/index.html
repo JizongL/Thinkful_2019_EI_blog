@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Free Code Camp Note</title>
+    <meta name="description" content="  HTML5HTML5target="_blank" linked docment opened in a new window tab.&lt;hr&gt; horizontal line.line-heightz-index move it higher in the stack than those wi...">
+    
+    <link rel="shortcut icon" href="favicon.ico" >
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif" >    
+    <!-- original favicon <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    // <link rel="icon" href="/favicon.ico?" type="image/x-icon"> -->    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/TmmGeekBlog/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/TmmGeekBlog/2019/01/31/free-code-camp/">
+    <link rel="alternate" type="application/rss+xml" title="TmmGeek" href="http://localhost:4000/TmmGeekBlog/feed.xml ">
+
+
+
+    <script>
+    // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89660816-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/TmmGeekBlog/" class="brand">TmmGeek</a>
+        <small>Artificial Intelligence and Big Data student</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/TmmGeekBlog/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>Free Code Camp Note</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2019-01-31
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/TmmGeekBlog/category/#FreeCodeCamp" title="Category: FreeCodeCamp" rel="category">FreeCodeCamp</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#javascript" title="Tag: javascript" rel="tag">javascript</a-->
+        <a href="/TmmGeekBlog/tag/#javascript" title="Tag: javascript" rel="tag">javascript</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#html5" id="markdown-toc-html5">HTML5</a></li>
+  <li><a href="#css" id="markdown-toc-css">CSS</a>    <ul>
+      <li><a href="#specify-how-font-should-degrade" id="markdown-toc-specify-how-font-should-degrade">Specify how font should degrade</a></li>
+      <li><a href="#color" id="markdown-toc-color">color</a></li>
+      <li><a href="#fallback-value-to-a-css-variable" id="markdown-toc-fallback-value-to-a-css-variable">Fallback value to a CSS Variable</a></li>
+    </ul>
+  </li>
+  <li><a href="#javascript" id="markdown-toc-javascript">Javascript</a>    <ul>
+      <li><a href="#range-number-within-a-range" id="markdown-toc-range-number-within-a-range">Range number within a range.</a></li>
+      <li><a href="#parse-integer" id="markdown-toc-parse-integer">Parse Integer</a></li>
+      <li><a href="#ternary-operator" id="markdown-toc-ternary-operator">Ternary operator</a></li>
+      <li><a href="#array" id="markdown-toc-array">Array</a></li>
+      <li><a href="#spread-operator" id="markdown-toc-spread-operator">Spread operator</a>        <ul>
+          <li><a href="#indexof" id="markdown-toc-indexof">indexOf</a></li>
+          <li><a href="#for-loop" id="markdown-toc-for-loop">for loop</a></li>
+          <li><a href="#hasownproperty" id="markdown-toc-hasownproperty">hasOwnProperty()</a></li>
+          <li><a href="#iterate-through-keys-of-an-object" id="markdown-toc-iterate-through-keys-of-an-object">Iterate through keys of an object.</a></li>
+          <li><a href="#reverse-a-string" id="markdown-toc-reverse-a-string">reverse a string</a></li>
+          <li><a href="#factorize-a-number" id="markdown-toc-factorize-a-number">Factorize a Number</a></li>
+          <li><a href="#returning-longest-word-length" id="markdown-toc-returning-longest-word-length">returning longest word length.</a></li>
+          <li><a href="#return-largest-numbers-in-arrays" id="markdown-toc-return-largest-numbers-in-arrays">Return Largest Numbers in Arrays</a></li>
+          <li><a href="#confirm-the-ending" id="markdown-toc-confirm-the-ending">Confirm the ending</a></li>
+          <li><a href="#repeat-a-string-repeat-a-string" id="markdown-toc-repeat-a-string-repeat-a-string">Repeat a String Repeat a String</a></li>
+          <li><a href="#finders-keepers" id="markdown-toc-finders-keepers">Finders Keepers</a></li>
+          <li><a href="#title-case-a-sentence" id="markdown-toc-title-case-a-sentence">Title case a sentence</a></li>
+          <li><a href="#slice-and-splice" id="markdown-toc-slice-and-splice">Slice and Splice</a></li>
+          <li><a href="#fitting-a-number-in-between-two-numbers" id="markdown-toc-fitting-a-number-in-between-two-numbers">fitting a number in between two numbers.</a></li>
+          <li><a href="#chunky-monkey" id="markdown-toc-chunky-monkey">Chunky Monkey</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="html5">HTML5</h1>
+
+<p><code class="highlighter-rouge">target="_blank"</code> linked docment opened in a new window tab.</p>
+
+<p><code class="highlighter-rouge">&lt;hr&gt;</code> horizontal line.</p>
+
+<p><code class="highlighter-rouge">line-height</code></p>
+
+<p><code class="highlighter-rouge">z-index</code> move it higher in the stack than those with lower values.</p>
+
+<h1 id="css">CSS</h1>
+
+<h3 id="specify-how-font-should-degrade">Specify how font should degrade</h3>
+<p>set up two fonts, when the first one is not available, the second will replace it.</p>
+
+<p>id has more importance compared to class.</p>
+
+<p><em>style tag on html</em>
+The browser reads from top to bottom, so if the CSS is on the html page inside the <code class="highlighter-rouge">&lt;style&gt;&lt;/style&gt;</code>,
+then the later one is used.
+inline style overrides <code class="highlighter-rouge">&lt;style&gt;</code> tag.
+<code class="highlighter-rouge">!important</code> overrides everything if added;</p>
+
+<h3 id="color">color</h3>
+<p><code class="highlighter-rouge">rgb(0, 0, 0)</code></p>
+
+<h3 id="fallback-value-to-a-css-variable">Fallback value to a CSS Variable</h3>
+<p><code class="highlighter-rouge">background: var(--pengiun-skin,black);</code></p>
+
+<p><a href="https://learn.freecodecamp.org/responsive-web-design/basic-css/use-a-media-query-to-change-a-variable">penguin css</a></p>
+
+<p><em>Create nice shadow edge</em></p>
+
+<p>use <code class="highlighter-rouge">box-shadow</code>
+The <code class="highlighter-rouge">box-shadow</code> property takes values for <code class="highlighter-rouge">offset-x</code> (how far to push the shadow horizontally from the element), <code class="highlighter-rouge">offset-y</code> (how far to push the shadow vertically from the element), <code class="highlighter-rouge">blur-radius</code>, <code class="highlighter-rouge">spread-radius</code> and a color value, in that order. The <code class="highlighter-rouge">blur-radius</code> and <code class="highlighter-rouge">spread-radius</code> values are optional.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#thumbnail{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+</code></pre></div></div>
+
+<h1 id="javascript">Javascript</h1>
+<p><code class="highlighter-rouge">.hasOwnProperty()</code></p>
+
+<p>We have an array of objects representing different people in our contacts lists.</p>
+
+<p>A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.</p>
+
+<p>The function should check if name is an actual contact’s firstName and the given property (prop) is a property of that contact.</p>
+
+<p>If both are true, then return the “value” of that property.</p>
+
+<p>If name does not correspond to any contacts then return “No such contact”</p>
+
+<p>If prop does not correspond to any valid properties of a contact found to match name then return “No such property”</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//Setup
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+
+function lookUpProfile(name, prop){
+// Only change code below this line
+    for(var i=0;i&lt;contacts.length;i++){
+        if(contacts[i]["firstName"]===name){
+            if(contacts[i][prop]){
+                return contacts[i][prop];
+            }else{
+                return "No such property";
+            }
+        }
+    }
+// Only change code above this line
+    return "No such contact";
+}
+
+// Change these values to test your function
+lookUpProfile("Akira", "likes");
+
+</code></pre></div></div>
+
+<p>The following create random number between 0 and 9.
+Math.floor() rounds number up.
+Math.random() creates random float between 0 and 1.
+so Math.random() would produce a range of [0,10),when multiplied by 10, it will generate
+the digit between 0 to 10.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+
+function randomWholeNum() {
+
+  // Only change code below this line.
+
+  return Math.floor(Math.random()*10);
+
+}
+
+</code></pre></div></div>
+
+<h2 id="range-number-within-a-range">Range number within a range.</h2>
+
+<p>Create a random number within a range, inclusively.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function randomNumberInRange(max,min){
+    return mathFloor(math.random()*(max-min))+min;
+}
+</code></pre></div></div>
+
+<h2 id="parse-integer">Parse Integer</h2>
+
+<p><code class="highlighter-rouge">parseInt(str, base)</code></p>
+
+<h2 id="ternary-operator">Ternary operator</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function checkSign(num) {
+    return num === 0 ? "zero":(num&gt;0)?"positive":"negative";
+}
+
+checkSign(10);
+</code></pre></div></div>
+
+<h2 id="array">Array</h2>
+<p>1d and multi d array</p>
+
+<p><code class="highlighter-rouge">unshift()</code></p>
+
+<p><code class="highlighter-rouge">push()</code>
+<code class="highlighter-rouge">pop()</code>
+<code class="highlighter-rouge">shift()</code>
+<code class="highlighter-rouge">splice(index,howManyElements,replacement)</code>
+<code class="highlighter-rouge">slice(starts,ends)</code></p>
+
+<h2 id="spread-operator">Spread operator</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let thisArray = [true, true, undefined, false, null];
+let thatArray = [...thisArray];
+// thatArray equals [true, true, undefined, false, null]
+// thisArray remains unchanged, and is identical to thatArray
+</code></pre></div></div>
+
+<h3 id="indexof">indexOf</h3>
+<p>if the element exists inside an array, indexOf() will return an index number. but
+if the element does not exist, then it would return a negative number.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function quickCheck(arr, elem) {
+  // change code below this line
+  return arr.indexOf(elem)&gt;0;
+  // change code above this line
+}
+
+// change code here to test different cases:
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+</code></pre></div></div>
+
+<h3 id="for-loop">for loop</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function filteredArray(arr, elem) {
+  let newArr = [];
+  for(var i = 0;i &lt; arr.length;i++){
+    // if elem is not found in the current nested array, push it to the new array.
+    if(!arr[i].find(element=&gt;element===elem)){
+      newArr.push(arr[i]);
+    }
+
+  }
+  // change code above this line
+  return newArr;
+}
+
+// change code here to test different cases:
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+</code></pre></div></div>
+<h3 id="hasownproperty">hasOwnProperty()</h3>
+
+<p><code class="highlighter-rouge">hasOwnProperty()</code></p>
+
+<p><code class="highlighter-rouge">element in array</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function isEveryoneHere(obj) {
+  // change code below this line
+  return ("Alan", "Jeff", "Sarah","Ryan") in users;
+  // change code above this line
+}
+
+console.log(isEveryoneHere(users));
+</code></pre></div></div>
+
+<h3 id="iterate-through-keys-of-an-object">Iterate through keys of an object.</h3>
+<p>Use for loop or use ` Object.keys()`</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for (let user in users) {
+  console.log(user);
+};
+
+// logs:
+Alan
+Jeff
+Sarah
+Ryan
+
+</code></pre></div></div>
+
+<h3 id="reverse-a-string">reverse a string</h3>
+
+<p>use <code class="highlighter-rouge">split</code> and <code class="highlighter-rouge">join</code> to achieve this function.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function reverseString(str) {
+  let wordList=[];
+  for(let i = str.length-1;i&gt;-1;i--){
+	  wordList.push( str.split('')[i]);
+  };
+  return wordList.join('');
+}
+</code></pre></div></div>
+
+<h3 id="factorize-a-number">Factorize a Number</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function factorialize(num) {
+  if(num===0){
+    return 1;
+  }
+  for (let i=num;i&gt;1;i--){
+    num*=(i-1);
+
+  }
+  return num;
+}
+
+factorialize(5);
+</code></pre></div></div>
+
+<h3 id="returning-longest-word-length">returning longest word length.</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findLongestWordLength(str) {
+  let wordList = str.split(' ');
+  let length = 0;
+  for(let i=0;i&lt;wordList.length;i++){
+	  if(wordList[i].length&gt;length){
+	  length = wordList[i].length;
+	  };
+  }
+
+
+  return length;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+</code></pre></div></div>
+
+<h3 id="return-largest-numbers-in-arrays">Return Largest Numbers in Arrays</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function largestOfFour(arr) {
+  // declare variable
+	let largestArr = [];
+    // loop through each element in arr.
+	arr.forEach(
+		array =&gt;{
+			//let num equals to the first number in the current list.
+			let num = array[0];
+            // for loop through the current array.
+			for(let i=0;i&lt;array.length;i++){
+                // if any number in the list is bigger than num, then assign that
+                // number to variable num, until the largest number is assigned.  
+                if(array[i]&gt;num){
+					num=array[i];
+				};
+			}
+			largestArr.push(num);
+		}
+	)
+
+
+  return largestArr;
+}
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">.endsWith()</code></p>
+
+<h3 id="confirm-the-ending">Confirm the ending</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  return str.slice(str.length - target.length) === target;
+
+}
+
+confirmEnding("Bastian", "n");
+</code></pre></div></div>
+<h3 id="repeat-a-string-repeat-a-string">Repeat a String Repeat a String</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function repeatStringNumTimes(str, num) {
+  // repeat after me
+  let str_copy = str;
+  if(num &lt; 0){
+    return "";
+  }
+  for(let i =0;i&lt;num-1;i++){
+    str+=str_copy;
+
+  }
+  return str;
+
+
+}
+
+repeatStringNumTimes("abc", 3);
+</code></pre></div></div>
+
+<h3 id="finders-keepers">Finders Keepers</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findElement(arr, func){
+  return arr.find(element =&gt; func(element));  
+}
+
+findElement([1, 2, 3, 4], num =&gt; num % 2 === 0);
+</code></pre></div></div>
+
+<h3 id="title-case-a-sentence">Title case a sentence</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function titleCase(str) {
+	str=str.toLowerCase();
+	console.log(str.split(" "));
+	const str1=str.split(" ").map(
+		element =&gt; element[0].toUpperCase()+element.slice(1)
+	);
+
+  return str1.join(" ");
+
+}
+
+
+titleCase("I'm a little tea pot");
+</code></pre></div></div>
+
+<h3 id="slice-and-splice">Slice and Splice</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function frankenSplice(arr1, arr2, n) {
+  // It's alive. It's alive!
+  let localArray = arr2.slice();
+  for(let i=0;i&lt;arr1.length;i++){
+    localArray.splice(n,0,arr1[i])
+    n++;
+  }
+  return localArray;
+}
+
+
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+</code></pre></div></div>
+
+<h3 id="fitting-a-number-in-between-two-numbers">fitting a number in between two numbers.</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getIndexToIns(arr, num) {
+  arr.sort(function(a, b) {
+    return a - b;
+  });
+
+  for (var a = 0; a &lt; arr.length; a++) {
+    if (arr[a] &gt;= num)
+      return a;
+  }
+
+  return arr.length;
+}
+
+</code></pre></div></div>
+
+<h3 id="chunky-monkey">Chunky Monkey</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function chunkArrayInGroups(arr, size) {
+
+  var temp = [];
+  var result = [];
+
+  for (var a = 0; a &lt; arr.length; a++) {
+    if (a % size !== size - 1)
+      temp.push(arr[a]);
+    else {
+      temp.push(arr[a]);
+      result.push(temp);
+      temp = [];
+    }
+  }
+
+  if (temp.length !== 0)
+    result.push(temp);
+  return result;
+}
+</code></pre></div></div>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/TmmGeekBlog/2019/02/05/thinkful-jquery-note/">Jquery note
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="/TmmGeekBlog/2019/02/02/javascript-code-collection/">Javascript code collection
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/TmmGeekBlog/2019/01/31/css-code-collection/">Free Code Camp Note</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/TmmGeekBlog/2019/02/02/javascript-code-collection/">Javascript code collection</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="http://localhost:4000/2019/01/31/free-code-camp/" data-title="Free Code Camp Note" data-url="http://localhost:4000/2019/01/31/free-code-camp/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {
+        short_name: "tmmgeek"
+    };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/TmmGeekBlog/js/pageContent.js " charset="utf-8"></script>
+<!-- MathJax markdown script -->
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             Computer and Math related 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/JizongL" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:2015rpro@gmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+            <a href="http://weibo.com/ΤmmGeek" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a>  
+            <a href="https://www.zhihu.com/people/TmmGeek" title="Zhihu"><i class="iconfont icon-daoruzhihu"></i></a>  
+            <a href="https://twitter.com/JizongLiang" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>  
+            <a href="https://www.facebook.com/jizong.liang" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+            <a href="https://www.linkedin.com/in/jizongliang" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  
+            <a href=" https://dribbble.com/JizongLiang" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> 
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" class="scroll">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src="/TmmGeekBlog /js/main.js " charset="utf-8"></script>
+    <script src="/TmmGeekBlog /js/scroll.min.js " charset="utf-8"></script>
+  </body>
+
+</html>

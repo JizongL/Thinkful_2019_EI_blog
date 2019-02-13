@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TmmGeek</title>
+    <description></description>
+    <link>http://localhost:4000/TmmGeekBlog/</link>
+    <atom:link href="http://localhost:4000/TmmGeekBlog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Feb 2019 10:34:24 -0500</pubDate>
+    <lastBuildDate>Wed, 13 Feb 2019 10:34:24 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title></title>
+        <description></description>
+        <pubDate>Wed, 13 Feb 2019 10:34:24 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/02/13/2019-02-09-javascript-correlation/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/02/13/2019-02-09-javascript-correlation/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Thinkful EI study note day 3</title>
+        <description>
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Spaghetti_code&quot;&gt;Spaghetti code&lt;/a&gt;
+
+</description>
+        <pubDate>Tue, 12 Feb 2019 13:52:00 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/02/12/thinkful-ei-day-4/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/02/12/thinkful-ei-day-4/</guid>
+        
+        <category>thinkful EI_program jQuery javascript</category>
+        
+        
+        <category>Thinkful</category>
+        
+      </item>
+    
+      <item>
+        <title>Thinkful EI study note day 3</title>
+        <description>&lt;a href=&quot;https://en.wikipedia.org/wiki/Spaghetti_code&quot;&gt;Spaghetti code&lt;/a&gt;
+</description>
+        <pubDate>Tue, 12 Feb 2019 13:52:00 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/02/12/thinkful-ei-day-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/02/12/thinkful-ei-day-3/</guid>
+        
+        <category>thinkful EI_program jQuery javascript</category>
+        
+        
+        <category>Thinkful</category>
+        
+      </item>
+    
+      <item>
+        <title>Thinkful EI Study note day 2</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#event-delegation&quot; id=&quot;markdown-toc-event-delegation&quot;&gt;Event delegation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#drill-assignment&quot; id=&quot;markdown-toc-drill-assignment&quot;&gt;drill assignment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#jot-down-at-least-5-questions-that-you-have-about-jquery-and-interactive-web-apps-so-far&quot; id=&quot;markdown-toc-jot-down-at-least-5-questions-that-you-have-about-jquery-and-interactive-web-apps-so-far&quot;&gt;Jot down at least 5 questions that you have about jQuery and interactive web apps so far&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g http-server&lt;/code&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;my-project
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;-&amp;gt;&lt;/span&gt; /Users/bob/code/my-project
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; http-server &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 8080
+&lt;span class=&quot;go&quot;&gt;
+Starting up http-server, serving ./
+Available on:
+  http:127.0.0.1:8080
+Hit CTRL-C to stop the server
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; refers to &lt;code class=&quot;highlighter-rouge&quot;&gt;event.currentTarget&lt;/code&gt;
+&lt;em&gt;note&lt;/em&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; only refers to the element within the callback function
+&lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; will not behave as expected if use ES6 arrow functions. Stick with the function keyword when using it.
+
+&lt;h3 id=&quot;event-delegation&quot;&gt;Event delegation&lt;/h3&gt;
+
+allows us to attach a single event listener, to a parent element, that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future.
+
+&lt;h3 id=&quot;drill-assignment&quot;&gt;drill assignment&lt;/h3&gt;
+&lt;a href=&quot;https://repl.it/@JizongL/Cat-carousel-jQuery-1&quot;&gt;Cat carousel&lt;/a&gt;
+&lt;a href=&quot;https://repl.it/@JizongL/return-of-fizz-buzz-1&quot;&gt;FizzBuzz&lt;/a&gt;
+&lt;a href=&quot;https://github.com/JizongL/shopping-list&quot;&gt;Shopping list challenge&lt;/a&gt;
+
+&lt;h3 id=&quot;jot-down-at-least-5-questions-that-you-have-about-jquery-and-interactive-web-apps-so-far&quot;&gt;Jot down at least 5 questions that you have about jQuery and interactive web apps so far&lt;/h3&gt;
+1: What is the concept of Jquery API
+2: Is Jquery the only way to access the DOM?
+3: How do I better keep track of things between css and html and jquery? when the project is getting complicated?
+4: Is Jquery just higher level language than the traditional html DOM language? like document.getIdByTag() etc.
+5: How to plan a project with using Jquery, as it seems complicated when the program involves more and more functions and layouts.
+</description>
+        <pubDate>Mon, 11 Feb 2019 13:47:00 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/02/11/thinkful-ei-day-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/02/11/thinkful-ei-day-2/</guid>
+        
+        <category>EI_program</category>
+        
+        <category>jquery</category>
+        
+        <category>interactive_web_apps</category>
+        
+        
+        <category>Thinkful</category>
+        
+      </item>
+    
+      <item>
+        <title>Thinkful EI Study note day 1</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#local-dev-environment-setupmac&quot; id=&quot;markdown-toc-local-dev-environment-setupmac&quot;&gt;Local Dev environment setup(MAC)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;local-dev-environment-setupmac&quot;&gt;Local Dev environment setup(MAC)&lt;/h2&gt;
+
+Visual Studio Code
+
+download and install Visual studio Code
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Open the Command Palette (⇧ ⌘ P)&lt;/code&gt; and type &lt;code class=&quot;highlighter-rouge&quot;&gt;shell command&lt;/code&gt;
+Open terminal and test run &lt;code class=&quot;highlighter-rouge&quot;&gt;code ~/Desktop&lt;/code&gt;
+
+Homebrew
+&lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;&lt;/code&gt;
+
+Git
+&lt;a href=&quot;https://github.com/join?source=header-home&quot;&gt;sign up for GitHub&lt;/a&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;brew install git&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git --version&lt;/code&gt; confirm version
+
+&lt;em&gt;Configuration&lt;/em&gt;
+
+Now from the same Terminal window, run &lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global user.name &quot;Sally Student&quot;&lt;/code&gt; (substituting your user name), and then &lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global user.email &quot;sallystudent2017@gmail.com&quot;&lt;/code&gt; (substituting your email address).
+
+Node and NPM
+&lt;code class=&quot;highlighter-rouge&quot;&gt;brew install node&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;node --version and npm --version&lt;/code&gt;
+
+test node install
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;mkdir hello_node &amp;amp;&amp;amp; cd hello_node&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;console.log(&quot;hello world&quot;)&quot; &amp;gt; hello.js&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cat hello.js&lt;/code&gt; confirm file created properly. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;node hello.js&lt;/code&gt;
+
+&lt;a href=&quot;https://www.npmjs.com/package/express-generator&quot;&gt;Express generator&lt;/a&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g express-generator&lt;/code&gt; install globally 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;express hello_express&lt;/code&gt; test create a new app
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cd hello_express&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; install dependencies listed in &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;npm start&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:3000&lt;/code&gt; to visit new app and shall see “Welcome to express”.
+
+Installing ESLint
+compared to JLint, JHint, ESLint is most popular and customizable
+
+function 
+static analysis to find syntax errors, and problematic code before you run the code
+
+installed globally 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g eslint&lt;/code&gt;
+And configuration file is placed in your root directory so it will run across all projects.
+
+installed locally 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;--save-dev&lt;/code&gt; option like npm install &lt;code class=&quot;highlighter-rouge&quot;&gt;eslint --save-dev&lt;/code&gt; so an entry is placed in the devDependencies property in package.json. And a configuration file is placed in the root of the project which overrides the global configuration and allows for project specific configuration.
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cd ~/&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;.eslintrc.json&lt;/code&gt;
+
+paste the following into the json file
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;cm&quot;&gt;/** 
+    * ESLint: http://eslint.org/docs/user-guide/configuring
+    */&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// &quot;env:&quot; supplies predefined global variables&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;env&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;browser&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;es6&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;node&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;mocha&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;mongo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// our configuration extends the recommended base configuration&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;extends&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;eslint:recommended&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// define the type of file `script` or `module` for ES6 Modules&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;parserOptions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;sourceType&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;script&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//ESLint rules: Severity Levels: off = 0 | warn = 1 | error = 2&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;rules&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;strict&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;safe&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;//prefer `'use-strict';` pragma&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;eqeqeq&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;              &lt;span class=&quot;c1&quot;&gt;//prefer strict equality `===`&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;no-console&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;warn&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;//allows but warn about console like `console.log()`&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;no-unused-vars&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;warn&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;      &lt;span class=&quot;c1&quot;&gt;//warns about unused variables&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;no-eval&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;//disallows `eval()` usage&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;indent&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;//enforce 2 space indents (not tabs)        &lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;quotes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;single&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//prefer single quotes over double quotes&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;semi&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;always&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;//enforce semi-colon usage&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+read more about on &lt;a href=&quot;https://eslint.org/docs/user-guide/configuring#specifying-environments&quot;&gt;Specifying Environments&lt;/a&gt;
+
+ESLint basic
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;eslint filename.js&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;eslint --fix filename.js&lt;/code&gt;
+
+Setup VSCode
+
+Open Extension
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Shift+Command+X&lt;/code&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+Executing Javascript through NodeJS
+
+config to create an alias
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global alias.lg &quot;log --oneline --all --graph --decorate&quot;&lt;/code&gt;
+
+github collaboration exercise 
+create new local repo
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;touch README.md&lt;/code&gt;
+add and commit
+create repo in github 
+sync local to remote
+
+If error occured Github “fatal: remote origin already exists”
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git remote set-url origin git@github.com:ppreyer/first_app.git&lt;/code&gt;
+
+This can discard uncommitted changes 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout -- &amp;lt;filename&amp;gt;&lt;/code&gt;
+
+Auto create boiler plate
+Typing &lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt; and hitting &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;tab&amp;gt;&lt;/code&gt;
+</description>
+        <pubDate>Sat, 09 Feb 2019 17:32:00 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/02/09/thinkful-ei-day-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/02/09/thinkful-ei-day-1/</guid>
+        
+        <category>EI_program</category>
+        
+        <category>local_dev_environment</category>
+        
+        
+        <category>Thinkful</category>
+        
+      </item>
+    
+      <item>
+        <title>Questions to ask memtor</title>
+        <description>
+See questions from the comment of the following links.
+
+&lt;a href=&quot;https://repl.it/@JizongL/eventpreventDefault-demo-jQuery-1&quot;&gt;preventDefault&lt;/a&gt;
+
+</description>
+        <pubDate>Wed, 06 Feb 2019 10:38:00 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/02/06/question-to-ask-memtor/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/02/06/question-to-ask-memtor/</guid>
+        
+        <category>question</category>
+        
+        <category>memtor</category>
+        
+        
+        <category>Thinkful</category>
+        
+      </item>
+    
+      <item>
+        <title>Jquery note</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#document-ojbect-model&quot; id=&quot;markdown-toc-document-ojbect-model&quot;&gt;Document Ojbect Model&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dom-traversal-and-manipulation&quot; id=&quot;markdown-toc-dom-traversal-and-manipulation&quot;&gt;DOM Traversal and Manipulation&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#find-and-parent&quot; id=&quot;markdown-toc-find-and-parent&quot;&gt;.find() and .parent()&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#remove-element&quot; id=&quot;markdown-toc-remove-element&quot;&gt;remove element&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#use-animated-class&quot; id=&quot;markdown-toc-use-animated-class&quot;&gt;Use animated class&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#eventcurrenttarget&quot; id=&quot;markdown-toc-eventcurrenttarget&quot;&gt;event.currentTarget&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#this&quot; id=&quot;markdown-toc-this&quot;&gt;$(this)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#append-and-appendto&quot; id=&quot;markdown-toc-append-and-appendto&quot;&gt;.append() and .appendTo()&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toggle-and-hiding-with-delegation&quot; id=&quot;markdown-toc-toggle-and-hiding-with-delegation&quot;&gt;Toggle and hiding with delegation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#link-inside-the-event-handler-function&quot; id=&quot;markdown-toc-link-inside-the-event-handler-function&quot;&gt;link Inside the Event Handler Function&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#handle-multiple-events&quot; id=&quot;markdown-toc-handle-multiple-events&quot;&gt;Handle multiple events&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;document-ojbect-model&quot;&gt;Document Ojbect Model&lt;/h2&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;.getElementsByTagName()&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;.getElementsById()&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;appendChild()&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;insertBefore()&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;document.createTextNode()&lt;/code&gt;
+
+&lt;h2 id=&quot;dom-traversal-and-manipulation&quot;&gt;DOM Traversal and Manipulation&lt;/h2&gt;
+e.g
+&lt;code class=&quot;highlighter-rouge&quot;&gt;let paragraphElements = $('p')&lt;/code&gt;
+
+e.g
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;doHelloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.js-hide-it'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'hidden'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.js-hello-world'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'hello world from JS'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;doHelloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+css code for styling and DOM minapulation should be separated.
+
+&lt;h3 id=&quot;find-and-parent&quot;&gt;.find() and .parent()&lt;/h3&gt;
+
+Find a child
+&lt;code class=&quot;highlighter-rouge&quot;&gt;const someChild = $('some-child-name')&lt;/code&gt;
+
+Then apply &lt;code class=&quot;highlighter-rouge&quot;&gt;parent()&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;find()&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;someChild.parent('some-child-name').removeClass('some-css-name')&lt;/code&gt;
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;someChild.find('some-child-name').addClass('some-css-name')&lt;/code&gt;
+
+### prop() Disable an element
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $(&quot;button&quot;).prop(&quot;disabled&quot;,true);
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+### Change text inside an element
+ &lt;code class=&quot;highlighter-rouge&quot;&gt;.html()&lt;/code&gt;
+ &lt;code class=&quot;highlighter-rouge&quot;&gt;.text()&lt;/code&gt;
+
+&lt;h3 id=&quot;remove-element&quot;&gt;remove element&lt;/h3&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;.remove&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;.appendTo()&lt;/code&gt;
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;.parent()&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;.children()&lt;/code&gt;
+give the class &lt;code class=&quot;highlighter-rouge&quot;&gt;target&lt;/code&gt; its nth children a &lt;code class=&quot;highlighter-rouge&quot;&gt;style&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;target:nth-child(n)&lt;/code&gt;
+
+&lt;h3 id=&quot;use-animated-class&quot;&gt;Use animated class&lt;/h3&gt;
+&lt;a href=&quot;https://daneden.github.io/animate.css/&quot;&gt;Animated.Css&lt;/a&gt;
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;animated hinge&lt;/code&gt;
+
+&lt;h3 id=&quot;eventcurrenttarget&quot;&gt;event.currentTarget&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$('.js-form').submit(event =&amp;gt; {
+  // this stops the default form submission behavior
+  event.preventDefault();
+  const userTextElement = $(event.currentTarget).find('#user-text');
+  $(&quot;.js-display-user-text&quot;).text(`user text is:  ${userTextElement.val()}`);
+  userTextElement.val(&quot;&quot;);
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;event.currentTarget&lt;/code&gt; has been replaced with &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt;.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; is more common in jQuery.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; only refers to the element within the callback function.
+
+Finally, note that in the context of callback functions, this will not behave as expected if you use ES6 arrow functions. If you need &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; to refer to the event object, stick with the &lt;code class=&quot;highlighter-rouge&quot;&gt;function&lt;/code&gt; keyword.
+
+&lt;h3 id=&quot;this&quot;&gt;$(this)&lt;/h3&gt;
+
+&lt;h3 id=&quot;append-and-appendto&quot;&gt;.append() and .appendTo()&lt;/h3&gt;
+They perform the same task. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$( &quot;&amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;&quot; ).appendTo( &quot;.inner&quot; );&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$( &quot;.inner&quot; ).appendTo( &quot;&amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;&quot; );&lt;/code&gt;
+
+&lt;h3 id=&quot;toggle-and-hiding-with-delegation&quot;&gt;Toggle and hiding with delegation&lt;/h3&gt;
+read the note from the following &lt;a href=&quot;https://repl.it/@JizongL/toggling-and-hiding-button?language=html&amp;amp;folderId=&quot;&gt;link&lt;/a&gt;
+
+&lt;h3 id=&quot;link-inside-the-event-handler-function&quot;&gt;link Inside the Event Handler Function&lt;/h3&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;pageX, pageY&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;type&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;which&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;data&lt;/code&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;input&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;change&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;bar&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Associate data with event binding&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;eventObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;An input value has changed! &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;eventObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;target&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;namespace&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;timeStamp&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;preventDefault()&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;stopPropagation()&lt;/code&gt;
+
+var element = $( this );
+
+&lt;h3 id=&quot;handle-multiple-events&quot;&gt;Handle multiple events&lt;/h3&gt;
+Use key:value syntax
+The following has two events, &lt;code class=&quot;highlighter-rouge&quot;&gt;click&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mouseover&lt;/code&gt;serve as key and the functions as value, all triggered by the target “p”
+
+&lt;a href=&quot;https://repl.it/@JizongL/multipleeventslistening&quot;&gt;Check this link&lt;/a&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;p&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;click&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;clicked!&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;mouseover&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;hovered!&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 05 Feb 2019 17:43:00 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/02/05/thinkful-jquery-note/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/02/05/thinkful-jquery-note/</guid>
+        
+        <category>jquery</category>
+        
+        <category>javascript</category>
+        
+        
+        <category>Thinkful</category>
+        
+      </item>
+    
+      <item>
+        <title>Javascript code collection</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;Introduction&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#string&quot; id=&quot;markdown-toc-string&quot;&gt;String&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#sort-an-array-of-words-according-to-their-length&quot; id=&quot;markdown-toc-sort-an-array-of-words-according-to-their-length&quot;&gt;Sort an array of words according to their length&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+This post contains my collection of code that solve various problems
+
+&lt;h2 id=&quot;string&quot;&gt;String&lt;/h2&gt;
+
+&lt;h3 id=&quot;sort-an-array-of-words-according-to-their-length&quot;&gt;Sort an array of words according to their length&lt;/h3&gt;
+
+</description>
+        <pubDate>Sat, 02 Feb 2019 12:45:00 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/02/02/javascript-code-collection/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/02/02/javascript-code-collection/</guid>
+        
+        <category>javascript</category>
+        
+        <category>code</category>
+        
+        <category>collection</category>
+        
+        
+        <category>code_collection</category>
+        
+      </item>
+    
+      <item>
+        <title>Free Code Camp Note</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#html5&quot; id=&quot;markdown-toc-html5&quot;&gt;HTML5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;html5&quot;&gt;HTML5&lt;/h1&gt;
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;target=&quot;_blank&quot;&lt;/code&gt; linked docment opened in a new window tab.
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; horizontal line.
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;line-height&lt;/code&gt;
+
+&lt;code class=&quot;highlighter-rouge&quot;&gt;z-index&lt;/code&gt; move it higher in the stack than those with lower values.
+
+</description>
+        <pubDate>Thu, 31 Jan 2019 16:40:00 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/01/31/free-code-camp/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/01/31/free-code-camp/</guid>
+        
+        <category>javascript</category>
+        
+        
+        <category>FreeCodeCamp</category>
+        
+      </item>
+    
+      <item>
+        <title>Free Code Camp Note</title>
+        <description>
+</description>
+        <pubDate>Thu, 31 Jan 2019 10:05:00 -0500</pubDate>
+        <link>http://localhost:4000/TmmGeekBlog/2019/01/31/css-code-collection/</link>
+        <guid isPermaLink="true">http://localhost:4000/TmmGeekBlog/2019/01/31/css-code-collection/</guid>
+        
+        <category>css</category>
+        
+        
+        <category>code_collection</category>
+        
+      </item>
+    
+  </channel>
+</rss>

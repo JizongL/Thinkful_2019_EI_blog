@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CSS Note</title>
+    <meta name="description" content="  CSS the right wayCSS the right wayCSS (Cascading Style Sheets) HTML is about structure and content (aka, the “content layer”), CSS is about style and appea...">
+    
+    <link rel="shortcut icon" href="favicon.ico" >
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif" >    
+    <!-- original favicon <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    // <link rel="icon" href="/favicon.ico?" type="image/x-icon"> -->    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/TmmGeekBlog/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/TmmGeekBlog/2019/01/18/css-note/">
+    <link rel="alternate" type="application/rss+xml" title="TmmGeek" href="http://localhost:4000/TmmGeekBlog/feed.xml ">
+
+
+
+    <script>
+    // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89660816-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/TmmGeekBlog/" class="brand">TmmGeek</a>
+        <small>Artificial Intelligence and Big Data student</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/TmmGeekBlog/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>CSS Note</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2019-01-18
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/TmmGeekBlog/category/#Thinkful" title="Category: Thinkful" rel="category">Thinkful</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#thinkful" title="Tag: thinkful" rel="tag">thinkful</a-->
+        <a href="/TmmGeekBlog/tag/#thinkful" title="Tag: thinkful" rel="tag">thinkful</a>&nbsp;
+    
+        <!--a href="/tag/#Web_development" title="Tag: Web_development" rel="tag">Web_development</a-->
+        <a href="/TmmGeekBlog/tag/#Web_development" title="Tag: Web_development" rel="tag">Web_development</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#css-the-right-way" id="markdown-toc-css-the-right-way">CSS the right way</a></li>
+  <li><a href="#css-layout" id="markdown-toc-css-layout">CSS layout</a>    <ul>
+      <li><a href="#inline-elements" id="markdown-toc-inline-elements">Inline elements</a></li>
+      <li><a href="#block-level-elements" id="markdown-toc-block-level-elements">Block-level elements</a></li>
+      <li><a href="#inline-block-element" id="markdown-toc-inline-block-element">inline-block element</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-position-property" id="markdown-toc-the-position-property">The position property</a>    <ul>
+      <li><a href="#absolute" id="markdown-toc-absolute">Absolute</a></li>
+    </ul>
+  </li>
+  <li><a href="#float" id="markdown-toc-float">float</a></li>
+  <li><a href="#extra-notes" id="markdown-toc-extra-notes">Extra notes</a></li>
+  <li><a href="#quiz" id="markdown-toc-quiz">quiz</a></li>
+  <li><a href="#code-collection" id="markdown-toc-code-collection">Code Collection</a></li>
+  <li><a href="#keys-to-remember" id="markdown-toc-keys-to-remember">keys to remember</a></li>
+  <li><a href="#download-or-linksnot-read-yet" id="markdown-toc-download-or-linksnot-read-yet">Download or Links(not read yet)</a></li>
+  <li><a href="#questions-to-ask-memtor" id="markdown-toc-questions-to-ask-memtor">Questions to ask memtor</a></li>
+</ul>
+
+<h2 id="css-the-right-way">CSS the right way</h2>
+<p>CSS (Cascading Style Sheets)
+ HTML is about structure and content (aka, the “content layer”), CSS is about style and appearance.</p>
+
+<p>The key vocabulary words for CSS are: ruleset, selector, declaration block, declarations, property, and value.</p>
+
+<p>commenting in css
+<code class="highlighter-rouge">/* valid */</code></p>
+
+<p>CSS Selectors</p>
+
+<p>The selector here (p::first-letter - note the double colon) is a pseudo-element.</p>
+
+<p>This is an example of inline styling and it is to be avoided</p>
+
+<p>Engineers refer to this as maintaining the separation of concerns between HTML and CSS.</p>
+
+<p>the browser will choose the rule with higher specificity.</p>
+
+<p>Cascading
+The cascade is a process browsers follow to determine which CSS values get applied for all the properties on a given element.</p>
+
+<p>To determine which property-value pairs to apply to a particular element, the browser</p>
+
+<p>Determines which rules apply to the element
+Takes all the relevant rulesets and sorts them according to their origin (for instance, inline styles vs. external stylesheets — inline styles win over external) and importance (more on importance in a moment)
+Takes all rulesets that have same origin and importance and sorts them by selector specificity
+If there are still conflicting values for rulesets with the same importance, origin, and specificity, applies the ruleset that was declared last.</p>
+
+<p>keyword !important(do not use it easily)</p>
+
+<p>CSS resets or CSS normalization to ensure a consistent experience across browsers.</p>
+
+<p>Though box-sizing has three possible values (content-box, padding-box, and border-box), the most popular value is border-box.</p>
+
+<p>pseudo class</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">div</span><span class="nc">.foo</span><span class="nd">:hover</span><span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="nd">::first-letter</span> <span class="p">{</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>CSS basic box model</p>
+
+<p>Inheriting box-sizing Probably</p>
+
+<p><code class="highlighter-rouge">*, *:before, *:after {
+  box-sizing: inherit;
+}</code></p>
+
+<p>CSS reset
+webfonts
+“web safe” fonts (for example, Arial, Helvetica, and Georgia)</p>
+
+<p>font-family
+font-size
+font-weight
+color
+background-image
+background-repeat
+background-size</p>
+
+<p>Tinting</p>
+
+<p>Element selectors (e.g., p {…})
+Combination selectors (e.g., .foo.bar {…})
+Multi selectors (e.g., .foo, .bar {…})
+Descendant selectors (e.g., .foo li {…})
+Direct child selectors (e.g., .foo &gt; li {…})
+Before and after pseudo-elements selectors (e.g., li::before {…})
+Anchor pseudo-classes (e.g., a:hover {…})
+Attribute selectors (e.g., input[type=”text”] {…})</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a:link {
+  /* unvisited link */
+}
+
+a:visited {
+  /* visited link */
+}
+
+a:hover {
+  /* mouse over link */
+}
+
+a:focus {
+  /* keyboard focus on link */
+}
+
+
+a:active {
+  /* selected link (i.e., you've clicked
+    but not released on the link)
+ */
+}
+
+a:link {
+  color: purple;
+}
+
+a:hover,
+a:focus {
+  font-size: 20px;
+}
+
+a:visited {
+  color: orange;
+}
+
+a:active {
+  color: black;
+}
+
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">aside p {
+  /* make rules */
+}</code></p>
+
+<p><code class="highlighter-rouge">aside &gt; p {
+  /* make rules */
+}</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* key-like styles used by
+https://meta.stackexchange.com */
+kbd {
+  display: inline-block;
+  margin: 0 .1em;
+  padding: .1em .6em;
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #242729;
+  text-shadow: 0 1px 0 #FFF;
+  background-color: #e1e3e5;
+  border: 1px solid #adb3b9;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(12,13,14,0.2), 0 0 0 2px #FFF inset;
+  white-space: nowrap;
+}
+
+</code></pre></div></div>
+
+<p>Exact match: element[attribute=value]
+Match pattern anywhere in value: element[attribute*=value]
+Match pattern at beginning of value: element[attribute^=value]
+Match pattern at end of value: element[attribute$=value]</p>
+
+<h2 id="css-layout">CSS layout</h2>
+<p><code class="highlighter-rouge"> margin: auto</code>
+When you need to <em>horizontally center block-level content</em> relative to a parent element, margin: auto is your friend.
+works only for block-level elements</p>
+
+<h3 id="inline-elements">Inline elements</h3>
+<p>An inline element – for example, a, strong, em, or span – doesn’t start on a new line and usually does not contain additional elements, but instead just contains text</p>
+
+<p>another definition =&gt;(An inline element does not start on a new line and only takes up as much width as necessary.)</p>
+
+<p>The following works with inline elements centering.</p>
+
+<p><code class="highlighter-rouge">text-align: center;</code>
+<code class="highlighter-rouge">text-shadow</code></p>
+
+<p><a href="https://repl.it/@thinkful/text-aligncenter-example">Check out this link</a> for example.</p>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">Check out this link</a></p>
+
+<p>You can change the visual presentation of an element using the CSS display property. For example, by changing the value of <code class="highlighter-rouge">display</code> from “inline” to “block”</p>
+
+<p><a href="https://repl.it/@JizongL/Inline-elements-example-1">check this example out</a></p>
+
+<h3 id="block-level-elements">Block-level elements</h3>
+
+<p>block-level elements will take up the entire width of whatever element they appear inside of, but we can override this by explicitly setting the <code class="highlighter-rouge">width</code> or <code class="highlighter-rouge">max-width</code> property on an element.</p>
+
+<p><a href="https://repl.it/@thinkful/block-level-elements-example">Check out this example</a></p>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements">list of block level elements</a></p>
+
+<h3 id="inline-block-element">inline-block element</h3>
+<p>An inline-block element displays inline like a span or a element, but you can give it an explicit width, height, margin, and padding.</p>
+
+<p>we’ve set their width to 25%, together, they take up 100% of the width of their parent (the &lt;main&gt; element).</p>
+
+<p><code class="highlighter-rouge">display: inline-block;</code></p>
+
+<p><a href="https://repl.it/@JizongL/Inline-block-example-1">Inline-block element example</a></p>
+
+<h2 id="the-position-property">The position property</h2>
+<p>The <code class="highlighter-rouge">position</code> property is all about the flow of elements in an HTML document.</p>
+
+<p>e.g: <code class="highlighter-rouge">statics</code> and <code class="highlighter-rouge">fixed</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+.foo {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  background-color: blue;
+  left: 0;
+  top: 0;
+}
+
+</code></pre></div></div>
+<p>CSS gives us four offset properties: <code class="highlighter-rouge">left</code>, <code class="highlighter-rouge">right</code>, <code class="highlighter-rouge">top</code>, <code class="highlighter-rouge">bottom</code>. These properties can be used on elements whose position is set to <code class="highlighter-rouge">fixed</code>, <code class="highlighter-rouge">relative</code>, and <code class="highlighter-rouge">absolute</code>, but not static.</p>
+
+<p>In the first paragraph, “foo” and “bar” have no white space because the spans are right next to each other. In the second paragraph, however, there’s a space between “bizz” and “bang” because the browser interprets the line break between the two spans as a space.</p>
+
+<p><a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/">Other tricks</a>
+also look at <a href="https://codepen.io/JizongL/pen/REXogY">codepen demo</a></p>
+
+<p><a href="http://flexboxfroggy.com/">flexboxfroggy</a></p>
+
+<h3 id="absolute">Absolute</h3>
+<p>We just said that an absolute element’s offsets are in relation to the first parent element that has a <a href="https://repl.it/@JizongL/Absolute-position-example-3">non-static position</a>.</p>
+
+<p>In this example, we’ve set <code class="highlighter-rouge">text-align</code>: right on the nav element, in order to get the links to align to the right. In order to get the kitten logo to align to the left, we set its position to absolute and then use a left offset so it doesn’t run directly against the left border of the nav.</p>
+
+<p>Check out this <a href="http://learnlayout.com/position-example.html">post</a> to solidify understanding of <code class="highlighter-rouge">position</code>.</p>
+
+<h2 id="float">float</h2>
+
+<p><code class="highlighter-rouge">clear</code> to clear, it follows immediate after a float element.
+check out <a href="https://repl.it/@JizongL/float-and-clear-example-2">this</a> to solidify understanding.</p>
+
+<p>The primary use case for floats is getting text to wrap around an image (or some other container).</p>
+
+<p><code class="highlighter-rouge">float: left;</code></p>
+
+<p><a href="https://repl.it/@JizongL/Float-example-1">example of float</a></p>
+
+<p><code class="highlighter-rouge">clear: right</code>
+The clear property specifies on which sides of an element floating elements are not allowed to float.</p>
+
+<p><em>caution</em>
+there are also many examples of floats being used to achieve layouts that would be better achieved by using display: inline-block;. Our advice for you at this point in your learning is to use floats only when you need to wrap text around an element.</p>
+
+<h2 id="extra-notes">Extra notes</h2>
+
+<p><a href="https://learn.shayhowe.com/html-css/opening-the-box-model/">Browser-Specific Properties &amp; Values</a>
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/">The Universal Selector</a></p>
+
+<h2 id="quiz">quiz</h2>
+<ul>
+  <li>Describing the different parts of a CSS ruleset (the selector, the declaration block, declarations, properties, values)</li>
+</ul>
+
+<p>selector-give you precise control over the elements targeted by a declaration block.n addition to element, class, and id selectors, there are also pseudo-classes and pseudo-elements</p>
+
+<p>declaration block-The declaration block follows the selector. A declaration block is a set of declarations contained in curly brackets ({, }). Within the block, each line is a separate declaration.</p>
+
+<p>declarations/property/value-A declaration consists of a property and the value it is to be set to.Each property has a range of valid values</p>
+
+<ul>
+  <li>Explaining what is meant when people say CSS is about presentation (vs. structure or behavior)</li>
+</ul>
+
+<p>CSS (Cascading Style Sheets) is the language used to control the presentation layer. Whereas HTML is about structure and content (aka, the “content layer”), CSS is about style and appearance</p>
+
+<ul>
+  <li>Explaining the box model
+The total space taken up by an element is determined by its width, height, padding, border, and margin</li>
+</ul>
+
+<p><img src="https://tf-curricula-prod.s3.amazonaws.com/curricula/6e8033080cefd638fd9ad37c3b230d99/WEB-DEV-001/v1/assets2/1.3.1_anatomy_of_css/box-model-1.png" /></p>
+
+<p>To calculate the measurements for an element, we add width, plus 2x padding, plus 2x border, plus 2x margin.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.foo {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid green;
+  margin: 30px;
+}
+</code></pre></div></div>
+<p>the above is 222px</p>
+
+<ul>
+  <li>
+    <p>Inspecting and manipulating CSS using DevTools</p>
+  </li>
+  <li>
+    <p>Learning new CSS properties</p>
+  </li>
+  <li>
+    <p>Solving basic CSS problems like setting background colors, font colors, width, height, etc.</p>
+  </li>
+  <li>
+    <p>Using a wide variety of CSS selectors to target HTML elements</p>
+  </li>
+  <li>
+    <p>Explaining and implementing horizontal centering for inline and block-level elements</p>
+  </li>
+  <li>
+    <p>Explaining and using the display: block vs. display: inline-block vs. display: inline</p>
+  </li>
+  <li>
+    <p>Explaining the so-called “white-space” problem and how to solve it</p>
+  </li>
+  <li>
+    <p>Explaining and using position: static vs. position: relative vs. position: fixed vs. position: absolute</p>
+  </li>
+  <li>
+    <p>Explaining and using the float property to get text to wrap around images or other content</p>
+  </li>
+  <li>
+    <p>Coding up a wide range of layouts from designs.</p>
+  </li>
+  <li>
+    <p>Explaining and implementing horizontal centering for inline and block-level elements</p>
+  </li>
+  <li>
+    <p>Explaining and using the display: block vs. display: inline-block vs. display: inline</p>
+  </li>
+  <li>
+    <p>Explaining the so-called “white-space” problem and how to solve it</p>
+  </li>
+  <li>
+    <p>Explaining and using position: static vs. position: relative vs. position: fixed vs. position: absolute</p>
+  </li>
+  <li>
+    <p>Explaining and using the float property to get text to wrap around images or other content</p>
+  </li>
+  <li>
+    <p>Coding up a wide range of layouts from designs.</p>
+  </li>
+</ul>
+
+<h2 id="code-collection">Code Collection</h2>
+<p><a href="https://repl.it/@JizongL/Pseudo-class-and-pseudo-element">Hover, first letter capitalized</a>
+<a href="https://repl.it/@thinkful/Box-sizing-example-2">box-sizing</a>
+<a href="http://learnlayout.com/box-sizing.html">extra box-sizing knowledge</a>
+<a href="https://codepen.io/JizongL/pen/MLabyV">white text on tinted image background</a>
+<a href="https://codepen.io/JizongL/pen/vbNyyO">entire image background</a> with <code class="highlighter-rouge">height</code> of <code class="highlighter-rouge">100vh</code>.
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">pseudo class keywords documentation</a>
+<a href="https://repl.it/@JizongL/Attribute-selector-drill-1">image upside down with attribute selector</a>
+<a href="http://bradfrost.com/blog/post/fixed-position/">fixed position extensive testing demo</a></p>
+
+<h2 id="keys-to-remember">keys to remember</h2>
+<p><a href="https://css-tricks.com/almanac/properties/q/quotes/">quotes</a></p>
+
+<h2 id="download-or-linksnot-read-yet">Download or Links(not read yet)</h2>
+
+<p><a href="https://meyerweb.com/eric/tools/css/reset/reset.css">CSS Meyer reset link</a>
+<a href="https://necolas.github.io/normalize.css/">Normalize.css</a>
+<a href="https://fonts.google.com/">Google webfont</a>
+<a href="https://modernizr.com/">Modernizr</a>
+<a href="http://learnlayout.com/display.html">Learnlayout</a>
+<a href="https://j.eremy.net/confused-about-rem-and-em/">em as unit in css</a>
+<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a>
+<a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML &amp; CSS</a>
+<a href="https://css-tricks.com/centering-css-complete-guide/">Centering things in CSS</a>
+<a href="https://learn.freecodecamp.org/responsive-web-design/basic-css/use-a-media-query-to-change-a-variable">penguin css</a> an interesting tutorial about a waving penguin from freecodecamp</p>
+
+<h2 id="questions-to-ask-memtor">Questions to ask memtor</h2>
+
+<p><a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/">CSS inheriting</a></p>
+
+<ul>
+  <li>
+    <p>normalize.css and CSS reset</p>
+  </li>
+  <li>
+    <p>Be sure to talk with your mentor about how they use DevTools in their day-to-day work.</p>
+  </li>
+  <li>
+    <p>How to use Modernizr with CSS?</p>
+  </li>
+  <li>
+    <p><a href="https://repl.it/@JizongL/position-property-drill">position</a> question(see comment in the code)</p>
+  </li>
+  <li>
+    <p>What is SVG editor used for?</p>
+  </li>
+</ul>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/TmmGeekBlog/2018/10/23/html_note/">AI trading day 1 note</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/TmmGeekBlog/2019/01/19/javascript-note/">Javascript Thinkful prep course note</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="http://localhost:4000/2019/01/18/css-note/" data-title="CSS Note" data-url="http://localhost:4000/2019/01/18/css-note/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {
+        short_name: "tmmgeek"
+    };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/TmmGeekBlog/js/pageContent.js " charset="utf-8"></script>
+<!-- MathJax markdown script -->
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             Computer and Math related 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/JizongL" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:2015rpro@gmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+            <a href="http://weibo.com/ΤmmGeek" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a>  
+            <a href="https://www.zhihu.com/people/TmmGeek" title="Zhihu"><i class="iconfont icon-daoruzhihu"></i></a>  
+            <a href="https://twitter.com/JizongLiang" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>  
+            <a href="https://www.facebook.com/jizong.liang" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+            <a href="https://www.linkedin.com/in/jizongliang" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  
+            <a href=" https://dribbble.com/JizongLiang" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> 
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" class="scroll">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src="/TmmGeekBlog /js/main.js " charset="utf-8"></script>
+    <script src="/TmmGeekBlog /js/scroll.min.js " charset="utf-8"></script>
+  </body>
+
+</html>

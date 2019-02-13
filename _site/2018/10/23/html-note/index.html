@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AI trading day 1 note</title>
+    <meta name="description" content="Elements vs. tags vs. attributesopening and closing tagself-closingattribute can’t be used on: , &lt;head&gt;, , , or ">
+    
+    <link rel="shortcut icon" href="favicon.ico" >
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif" >    
+    <!-- original favicon <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    // <link rel="icon" href="/favicon.ico?" type="image/x-icon"> -->    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/TmmGeekBlog/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/TmmGeekBlog/2018/10/23/html-note/">
+    <link rel="alternate" type="application/rss+xml" title="TmmGeek" href="http://localhost:4000/TmmGeekBlog/feed.xml ">
+
+
+
+    <script>
+    // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89660816-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/TmmGeekBlog/" class="brand">TmmGeek</a>
+        <small>Artificial Intelligence and Big Data student</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/TmmGeekBlog/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>AI trading day 1 note</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-10-23
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/TmmGeekBlog/category/#Trading" title="Category: Trading" rel="category">Trading</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#trading" title="Tag: trading" rel="tag">trading</a-->
+        <a href="/TmmGeekBlog/tag/#trading" title="Tag: trading" rel="tag">trading</a>&nbsp;
+    
+        <!--a href="/tag/#AI" title="Tag: AI" rel="tag">AI</a-->
+        <a href="/TmmGeekBlog/tag/#AI" title="Tag: AI" rel="tag">AI</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        
+<p>Elements vs. tags vs. attributes
+opening and closing tag
+self-closing</p>
+
+<p>attribute can’t be used on: <base />, &lt;head&gt;, <meta />, <param />, or <title></title></p>
+
+<p>HTML is all about structuring content
+visible and invisible elements
+root element</p>
+
+<p>called a CSS reset to zero</p>
+
+<!-- comment text -->
+
+<p>commenting out code.</p>
+
+<p>⌘ + /</p>
+
+<p>semantic HTML</p>
+
+<p>When people talk about “semantic HTML”, what they mean is that when you’re choosing an HTML element to wrap content, you should choose the one that most clearly aligns with the meaning of your content.</p>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">html tags recap</a></p>
+
+<p>view point</p>
+<meta name="viewport" content="width=device-width" />
+
+<p>accessibility
+accessibility (commonly shortened to a11y</p>
+
+<p>assistive technologies (often shortened as “ATs”</p>
+
+<p>Bold and italics (<i>) both connote visual emphasis, whereas strong and emphasis (<em>) suggest semantic emphasis.</em></i></p>
+
+<p>Visually, <b> and <strong>, and <em> and <i> look exactly the same and are</i></em></strong></b></p>
+
+<html lang="en">
+
+Accessible Rich Internet Applications"
+
+Always use structured, semantic HTML
+Always set the lang attribute on the opening HTML tag
+Set the role attribute where appropriate, especially for sectioning elements:
+<header role="banner"> for site-wide headers
+<nav role="navigation"> for navigation elements
+<main role="main"> for main elements
+<footer role="contentinfo"> for your site's footer
+
+### quiz
+
+Explaining and using semantic HTML
+when you're choosing an HTML element to wrap content, you should choose the one that most clearly aligns with the meaning of your content.
+
+Taking content and structuring it into well-formed, semantic HTML
+1st, an HTML document specifies each and everyone of its elements. 2nd, HTML specifies the hierarchical relationship between elements in a document.
+This tree consists of a series of nodes
+the <html> element the root element
+he root element has children (<head> and <body>).
+
+Explaining what a11y is and describing and following basic a11y best practices
+accessibility (commonly shortened to a11y
+
+
+## CSS the right way
+CSS (Cascading Style Sheets)
+ HTML is about structure and content (aka, the "content layer"), CSS is about style and appearance.
+
+ The key vocabulary words for CSS are: ruleset, selector, declaration block, declarations, property, and value.
+
+commenting in css
+`/* valid */`
+
+CSS Selectors
+
+The selector here (p::first-letter - note the double colon) is a pseudo-element.
+
+This is an example of inline styling and it is to be avoided
+
+Engineers refer to this as maintaining the separation of concerns between HTML and CSS.
+
+
+the browser will choose the rule with higher specificity.
+
+Cascading
+The cascade is a process browsers follow to determine which CSS values get applied for all the properties on a given element.
+
+To determine which property-value pairs to apply to a particular element, the browser
+
+Determines which rules apply to the element
+Takes all the relevant rulesets and sorts them according to their origin (for instance, inline styles vs. external stylesheets — inline styles win over external) and importance (more on importance in a moment)
+Takes all rulesets that have same origin and importance and sorts them by selector specificity
+If there are still conflicting values for rulesets with the same importance, origin, and specificity, applies the ruleset that was declared last.
+
+keyword !important(do not use it easily)
+
+CSS resets or CSS normalization to ensure a consistent experience across browsers.
+
+ Though box-sizing has three possible values (content-box, padding-box, and border-box), the most popular value is border-box.
+
+
+### keys to remember
+<hr /> horizontal line
+
+
+## Fonts
+
+[<em> VS <i>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em)
+
+
+</i></em></body></head></html></footer></main></nav></header></html>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/TmmGeekBlog/2018/10/23/html_note/">AI trading day 1 note</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="http://localhost:4000/2018/10/23/html-note/" data-title="AI trading day 1 note" data-url="http://localhost:4000/2018/10/23/html-note/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {
+        short_name: "tmmgeek"
+    };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/TmmGeekBlog/js/pageContent.js " charset="utf-8"></script>
+<!-- MathJax markdown script -->
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             Computer and Math related 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/JizongL" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:2015rpro@gmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+            <a href="http://weibo.com/ΤmmGeek" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a>  
+            <a href="https://www.zhihu.com/people/TmmGeek" title="Zhihu"><i class="iconfont icon-daoruzhihu"></i></a>  
+            <a href="https://twitter.com/JizongLiang" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>  
+            <a href="https://www.facebook.com/jizong.liang" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+            <a href="https://www.linkedin.com/in/jizongliang" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  
+            <a href=" https://dribbble.com/JizongLiang" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> 
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" class="scroll">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src="/TmmGeekBlog /js/main.js " charset="utf-8"></script>
+    <script src="/TmmGeekBlog /js/scroll.min.js " charset="utf-8"></script>
+  </body>
+
+</html>

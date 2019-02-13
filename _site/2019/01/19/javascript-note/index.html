@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Javascript Thinkful prep course note</title>
+    <meta name="description" content="  FactsFactsCanIUsecan help you understand which browsers support the feature.To get JavaScript into a web page, there are two main options.let and var decla...">
+    
+    <link rel="shortcut icon" href="favicon.ico" >
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif" >    
+    <!-- original favicon <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    // <link rel="icon" href="/favicon.ico?" type="image/x-icon"> -->    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/TmmGeekBlog/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/TmmGeekBlog/2019/01/19/javascript-note/">
+    <link rel="alternate" type="application/rss+xml" title="TmmGeek" href="http://localhost:4000/TmmGeekBlog/feed.xml ">
+
+
+
+    <script>
+    // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89660816-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/TmmGeekBlog/" class="brand">TmmGeek</a>
+        <small>Artificial Intelligence and Big Data student</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/TmmGeekBlog/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/TmmGeekBlog/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>Javascript Thinkful prep course note</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2019-01-19
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/TmmGeekBlog/category/#Thinkful" title="Category: Thinkful" rel="category">Thinkful</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#javascript" title="Tag: javascript" rel="tag">javascript</a-->
+        <a href="/TmmGeekBlog/tag/#javascript" title="Tag: javascript" rel="tag">javascript</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#facts" id="markdown-toc-facts">Facts</a>    <ul>
+      <li><a href="#coercion" id="markdown-toc-coercion">coercion</a></li>
+    </ul>
+  </li>
+  <li><a href="#function" id="markdown-toc-function">Function</a>    <ul>
+      <li><a href="#immediately-invoking-a-function-expression-iife" id="markdown-toc-immediately-invoking-a-function-expression-iife">Immediately invoking a function expression-IIFE</a></li>
+      <li><a href="#closure" id="markdown-toc-closure">Closure</a></li>
+      <li><a href="#recursion" id="markdown-toc-recursion">recursion</a></li>
+    </ul>
+  </li>
+  <li><a href="#template-strings" id="markdown-toc-template-strings">template strings</a></li>
+  <li><a href="#string-method" id="markdown-toc-string-method">string method</a></li>
+  <li><a href="#making-logical-assertions" id="markdown-toc-making-logical-assertions">Making logical assertions</a></li>
+  <li><a href="#control-flow-and-conditionals" id="markdown-toc-control-flow-and-conditionals">Control flow and conditionals</a>    <ul>
+      <li><a href="#ternary-operator" id="markdown-toc-ternary-operator">Ternary operator</a></li>
+      <li><a href="#error-handling" id="markdown-toc-error-handling">Error handling</a></li>
+      <li><a href="#switch" id="markdown-toc-switch">Switch</a></li>
+    </ul>
+  </li>
+  <li><a href="#loops" id="markdown-toc-loops">Loops</a></li>
+  <li><a href="#array" id="markdown-toc-array">Array</a>    <ul>
+      <li><a href="#array-methods" id="markdown-toc-array-methods">Array methods</a></li>
+    </ul>
+  </li>
+  <li><a href="#rest-parameters" id="markdown-toc-rest-parameters">Rest Parameters</a>    <ul>
+      <li><a href="#math-object" id="markdown-toc-math-object">Math object</a>        <ul>
+          <li><a href="#work-with-comparing-function" id="markdown-toc-work-with-comparing-function">work with comparing function</a></li>
+          <li><a href="#work-with-anonymous-function" id="markdown-toc-work-with-anonymous-function">work with Anonymous function</a></li>
+          <li><a href="#use-arrow-function-with-sort" id="markdown-toc-use-arrow-function-with-sort">use arrow function with sort()</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#loops-1" id="markdown-toc-loops-1">Loops</a>    <ul>
+      <li><a href="#for-loop" id="markdown-toc-for-loop">For Loop</a></li>
+      <li><a href="#while-loop" id="markdown-toc-while-loop">While loop</a></li>
+    </ul>
+  </li>
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a>    <ul>
+      <li><a href="#use-let-const-and-strict-mode" id="markdown-toc-use-let-const-and-strict-mode">Use let, const, and strict mode</a></li>
+    </ul>
+  </li>
+  <li><a href="#object" id="markdown-toc-object">Object</a>    <ul>
+      <li><a href="#add-delete-and-update-values" id="markdown-toc-add-delete-and-update-values">add, delete and update values.</a></li>
+      <li><a href="#self-reference-and-this" id="markdown-toc-self-reference-and-this">Self-reference and <code class="highlighter-rouge">this</code></a></li>
+    </ul>
+  </li>
+  <li><a href="#factory-functions" id="markdown-toc-factory-functions">Factory functions</a></li>
+  <li><a href="#question-to-ask" id="markdown-toc-question-to-ask">Question to ask</a></li>
+  <li><a href="#seminar" id="markdown-toc-seminar">seminar</a></li>
+  <li><a href="#download-and-links" id="markdown-toc-download-and-links">download and links</a></li>
+  <li><a href="#quiz" id="markdown-toc-quiz">quiz</a></li>
+</ul>
+
+<h2 id="facts">Facts</h2>
+
+<p><a href="https://caniuse.com/#home">CanIUse</a>
+can help you understand which browsers support the feature.</p>
+
+<p>To get JavaScript into a web page, there are two main options.</p>
+
+<p>let and var declare a variable; const declares a constant. A constant cannot be reassigned to a new value.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;script&gt;</span><span class="nx">src</span> <span class="o">=</span> <span class="s2">"app.js"</span><span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p><em>With jquery</em></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"https://www.somewhere-on-the-internet.com/coolLibrary.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span></code></pre></div></div>
+
+<p><em>Transpiling</em> is when you use a program to rewrite ES6 code as ES5 so it can run in all browsers.</p>
+
+<p>But unless you have a specific reason not to use <code class="highlighter-rouge">const</code> or <code class="highlighter-rouge">let</code>, you should abandon <code class="highlighter-rouge">var</code> entirely.</p>
+
+<p><code class="highlighter-rouge">const</code> is used to define constant values, which is another way of saying variables whose value cannot be reassigned.</p>
+
+<p><code class="highlighter-rouge">let</code> and <code class="highlighter-rouge">var</code> differ in terms of their scope.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'use strict';
+
+foo = 'bar'; // =&gt; Raises reference error
+</code></pre></div></div>
+
+<h3 id="coercion">coercion</h3>
+<p>variables are converted from one type to another in JavaScript</p>
+
+<p><code class="highlighter-rouge">typeof</code> check datatype</p>
+
+<p><code class="highlighter-rouge">null</code> is distinct datatype, but if use <code class="highlighter-rouge">typeof null</code> it returns “object”</p>
+
+<p><code class="highlighter-rouge">undefined</code>, do not use it as value to a variable. use  <code class="highlighter-rouge">null</code> instead.</p>
+
+<p>“objects” is considered as complex data type</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const person = {
+  name: 'Jane Doe',
+  greet: function() {
+    console.log('Hello world');
+  }
+};
+
+console.log(person.name); // =&gt; Jane Doe
+person.greet(); // =&gt; Hello world
+</code></pre></div></div>
+
+<p>The example above demonstrates that if you combine a number with a string using the + operator, the resulting value will be a string.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="https://code.jquery.com/jquery-3.1.0.js"&gt;&lt;/script&gt;
+ &lt;script src="index.js"&gt;&lt;/script&gt;
+</code></pre></div></div>
+
+<h2 id="function">Function</h2>
+<p><code class="highlighter-rouge">alert</code></p>
+
+<p>an argument is a value that gets passed to the function when it’s called. A parameter is the variable that holds the place of an argument when the function is defined.</p>
+
+<p>call signature ()</p>
+
+<p>Note that functions that do not set an explicit return value via return still return something, namely, undefined</p>
+
+<p>hoisting</p>
+
+<p>Default function parameters</p>
+
+<p>ES6 has default parameters</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function Myfunction(para){
+    //something
+}
+
+const Myfunction = function(para)
+{
+    //something
+}
+
+const Myfunction = (para) =&gt; //something
+
+</code></pre></div></div>
+<p>When defining an arrow function that takes a single parameter, the parentheses are optional:</p>
+
+<h3 id="immediately-invoking-a-function-expression-iife">Immediately invoking a function expression-IIFE</h3>
+
+<p>Notice the <code class="highlighter-rouge">()</code>, without it, the IIFE will throw an error.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(function () { return 'abc' }())
+'abc'
+</code></pre></div></div>
+
+<h3 id="closure">Closure</h3>
+
+<p>to reference a specific instance of a local binding in an enclosing scope—is called closure.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//A function is defined, it creates a local binding, and //return a function that accesses and returns the local // binding. </span>
+<span class="kd">function</span> <span class="nx">wrapValue</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+  <span class="kd">let</span> <span class="nx">local</span> <span class="o">=</span> <span class="nx">n</span><span class="p">;</span>
+  <span class="k">return</span> <span class="p">()</span><span class="o">=&gt;</span> <span class="nx">local</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">wrap1</span> <span class="o">=</span> <span class="nx">wrapValue</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">wrap2</span> <span class="o">=</span> <span class="nx">wrapValue</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">wrap1</span><span class="p">());</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">wrap2</span><span class="p">());</span>
+
+</code></pre></div></div>
+<p>more creative example</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">multiplier</span><span class="p">(</span><span class="nx">factor</span><span class="p">){</span>
+  <span class="k">return</span> <span class="nx">number</span> <span class="o">=&gt;</span> <span class="nx">number</span><span class="o">*</span><span class="nx">factor</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multiplier</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span>
+
+</code></pre></div></div>
+
+<h3 id="recursion">recursion</h3>
+
+<p>e.g factorial function</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">factorial</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">n</span><span class="o">===</span><span class="mi">1</span><span class="p">){</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span><span class="p">{</span>
+    <span class="k">return</span> <span class="nx">n</span><span class="o">*</span><span class="nx">factorial</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">factorial</span><span class="p">(</span><span class="mi">4</span><span class="p">));</span>
+</code></pre></div></div>
+<p>decide if a number is even or not.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">isEven</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nx">isEven</span><span class="p">(</span><span class="o">-</span><span class="nx">n</span><span class="p">);</span>
+  <span class="k">else</span> <span class="k">return</span> <span class="nx">isEven</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="template-strings">template strings</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const foo = "foo";
+function sayHello(){
+    return 'hello ';
+}
+
+const myString = `foo is set to ${foo}. Let's say hello:${sayHello}`
+
+</code></pre></div></div>
+
+<h2 id="string-method">string method</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const fooBar = 'foo bar foo bar';
+fooBar.length; // =&gt; 15
+fooBar.charAt(0); // =&gt; "f"
+fooBar.slice(4); // =&gt; "bar foo bar"
+fooBar.slice(4, 7); // =&gt; "bar"
+fooBar.split(" "); // =&gt; ["foo", "bar", "foo", "bar"]
+fooBar.toUpperCase(); // =&gt; "FOO BAR FOO BAR"
+fooBar.replace('foo', 'bar'); // =&gt; 'bar bar foo bar'
+</code></pre></div></div>
+<p>Inside a template string, you can refer to variables or execute code by using ${}</p>
+
+<p>counter ++</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let i = 0;
+let j = 0;
+
+// postfix operator
+let x = i++;
+
+// prefix operator
+let y = ++j;
+
+console.log(x); // 0
+console.log(i); // 1
+
+console.log(y); // 1
+console.log(j); // 1
+</code></pre></div></div>
+<p>n the case of the prefix operator, it increments before it returns the value.
+In the case of the postfix operator, it increments after it returns the value.</p>
+
+<h2 id="making-logical-assertions">Making logical assertions</h2>
+
+<p>False</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(Boolean(false));
+console.log(Boolean(""));
+console.log(Boolean(0));
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+</code></pre></div></div>
+<p>True</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log(Boolean({}));
+console.log(Boolean([]));
+console.log(Boolean(-1));
+</code></pre></div></div>
+
+<h2 id="control-flow-and-conditionals">Control flow and conditionals</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function analyzeNumber(num) {
+  if (typeof num !== 'number') {
+    console.log('not a number');
+  }
+  else if (num % 2 === 0) {
+    console.log('even number');
+  }
+  else {
+    console.log('odd number');
+  }
+}
+</code></pre></div></div>
+<h3 id="ternary-operator">Ternary operator</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getFee(isMember) {
+  return (isMember ? "$2.00" : "$10.00");
+}
+
+console.log(getFee(true));
+// expected output: "$2.00"
+</code></pre></div></div>
+<h3 id="error-handling">Error handling</h3>
+
+<p><code class="highlighter-rouge">try</code>, <code class="highlighter-rouge">catch</code>, <code class="highlighter-rouge">finally</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>try{
+nonExistenceVar +='foo';
+
+}
+
+catch (e){
+    console.log("something went wrong");
+    console.dir(e);
+}
+
+finally {
+    console.log('This happens in both success and failure case!')
+}
+
+</code></pre></div></div>
+
+<p>The browser will run the catch block and then continue running the next line of code. This is in contrast to an uncaught error, which bubbles up and stops code execution.</p>
+
+<p><code class="highlighter-rouge">throw</code>
+intentionally throw an error.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>try {
+  throw 'myException';
+}
+catch (e) {
+  // do something
+}
+
+</code></pre></div></div>
+
+<h3 id="switch">Switch</h3>
+<p><code class="highlighter-rouge">switch</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var fruittype = "Oranges";
+
+switch (fruittype) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Apples':
+    console.log('Apples are $0.32 a pound.');
+    break;
+  case 'Bananas':
+    console.log('Bananas are $0.48 a pound.');
+    break;
+  case 'Cherries':
+    console.log('Cherries are $3.00 a pound.');
+    break;
+  case 'Mangoes':
+    console.log('Mangoes are $0.56 a pound.');
+    break;
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    break;
+  default:
+   console.log('Sorry, we are out of ' + fruittype + '.');
+}
+
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">prompt("Enter passcode");</code></p>
+
+<p><code class="highlighter-rouge">Number.isNaN</code></p>
+
+<h2 id="loops">Loops</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let yourName;
+do {
+  yourName = prompt("Who are you?");
+} while (!yourName);
+console.log(yourName);
+</code></pre></div></div>
+
+<h2 id="array">Array</h2>
+
+<p>const allTheThings = [‘cats’, ‘dogs’, 42, [‘foo’, ‘bar’], true, function() { console.log(‘hello’)}];
+console.log(<code class="highlighter-rouge">The first thing is ${allTheThings[0]}</code>);</p>
+
+<p>To add an item to the end of an array, use the built-in <code class="highlighter-rouge">.push</code> method:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const myArray = [1,2,3];
+myArray.push(4);
+console.log(myArray);
+
+</code></pre></div></div>
+
+<h3 id="array-methods">Array methods</h3>
+
+<p><a href="https://repl.it/@JizongL/RuralMatureFilesize">list of array methods</a> repl exercise.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.pop()
+.shift()
+.find()
+.reduce()
+.filter()
+.map()
+.sort()
+.indexOf()
+.lastIndexOf()
+.concat()
+</code></pre></div></div>
+
+<p>Use <code class="highlighter-rouge">.slice()</code> to remove an item from array</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span><span class="nx">index</span><span class="p">){</span>
+  <span class="k">return</span> <span class="nx">array</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nx">index</span><span class="p">).</span><span class="nx">concat</span><span class="p">(</span><span class="nx">index</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">remove</span><span class="p">([</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"e"</span><span class="p">],</span> <span class="mi">2</span><span class="p">));</span>
+<span class="c1">// → ["a", "b", "d", "e"]</span>
+</code></pre></div></div>
+
+<h2 id="rest-parameters">Rest Parameters</h2>
+<p>Notice that the parameter of the funciton is not an array, but just numbers.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">max</span><span class="p">(...</span><span class="nx">numbers</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="o">-</span><span class="kc">Infinity</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">number</span> <span class="k">of</span> <span class="nx">numbers</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">&gt;</span> <span class="nx">result</span><span class="p">)</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">number</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">max</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">));</span>
+<span class="c1">// → 9</span>
+</code></pre></div></div>
+
+<p>spread an array into another array</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">arrayOne</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">];</span>
+<span class="nx">arrayTwo</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,...</span><span class="nx">arrayOne</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayTwo</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="math-object">Math object</h3>
+
+<p><code class="highlighter-rouge">.Math.abs()</code>
+<code class="highlighter-rouge">.Math.ceil()</code>
+<code class="highlighter-rouge">.Math.floor()</code>
+<code class="highlighter-rouge">.Math.round()</code></p>
+
+<h4 id="work-with-comparing-function">work with comparing function</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const myArray = [200, 20, 2, 100, 1, 10];
+
+console.log(myArray); // =&gt; [200, 20, 2, 100, 1, 10]
+
+function sortNumbers(a, b) {
+  return a - b;
+}
+
+myArray.sort(sortNumbers);
+console.log(myArray)
+</code></pre></div></div>
+
+<h4 id="work-with-anonymous-function">work with Anonymous function</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const myArray=[200,20,2,100,1,10];
+myArray.sort(function(a,b){
+    return a-b
+    })
+console.log(myArray)
+</code></pre></div></div>
+
+<h4 id="use-arrow-function-with-sort">use arrow function with sort()</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myArray.sort((a,b) =&gt; a -b);
+console.log(myArray)
+
+</code></pre></div></div>
+
+<h2 id="loops-1">Loops</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for (i=1;i&lt;=countTo;i++){
+    console.log(i)
+}
+
+</code></pre></div></div>
+<h3 id="for-loop">For Loop</h3>
+
+<p><em>note</em>:you can decrement (i–) or increment by, say, 2 (i+=2).</p>
+
+<h3 id="while-loop">While loop</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let counter = 1;
+const countTo = 10;
+while (counter &lt;= countTo){
+    console.log(counter);
+    counter++;
+}
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while(true){
+    if (someCondition){
+        break;
+    }
+}
+</code></pre></div></div>
+
+<h2 id="scope">Scope</h2>
+
+<p>Global VS Block</p>
+
+<p>scope chain</p>
+
+<p>check out <a href="https://github.com/JizongL/Thinkful2019BootCamp/blob/master/CSS_Precourse_2019/javascript_jquery/scope/challenge.md">Scope Write up Challenge</a></p>
+
+<ul>
+  <li>
+    <p>scope chain</p>
+  </li>
+  <li>
+    <p>determinate and indeterminate functions</p>
+  </li>
+  <li>
+    <p>global scope should be avoided.</p>
+  </li>
+  <li>
+    <p>pure function =&gt; determinate and no side effect.</p>
+  </li>
+</ul>
+
+<h3 id="use-let-const-and-strict-mode">Use let, const, and strict mode</h3>
+<p>always use let or const inside local block to define variable.</p>
+
+<p>‘use strict’, it will throw an error when <code class="highlighter-rouge">let</code> or <code class="highlighter-rouge">const</code> is not used.</p>
+
+<p>it’s best practice to default to putting ‘use strict’; at the top of all your JavaScript files.</p>
+
+<h2 id="object">Object</h2>
+
+<p>object literal.</p>
+
+<p>Key does not use quotation mark.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const ledZeppelin = {
+  singer: 'Robert Plant',
+  guitar: 'Jimmy Page',
+  bass: 'John Paul Jones',
+  drums: 'John Bonham'
+}
+
+</code></pre></div></div>
+
+<p>Key uses quotation marks, to include a space in between.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const ledZeppelin2 = {
+  'lead singer': 'Robert Plant',
+  'lead guitar': 'Jimmy Page',
+}
+</code></pre></div></div>
+
+<p>When an object has a value that is a function, it is called <a href="https://repl.it/@JizongL/Object-basics-example">method</a></p>
+
+<h3 id="add-delete-and-update-values">add, delete and update values.</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const foo = {
+    bar: 'bizz';
+}
+
+//add
+foo.mar = 'dizz';
+
+//update
+foo.bar = 'cizz';
+
+delete foo.bar;
+
+
+</code></pre></div></div>
+
+<h3 id="self-reference-and-this">Self-reference and <code class="highlighter-rouge">this</code></h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">myFamily</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">lastName</span><span class="p">:</span><span class="s2">"John"</span><span class="p">;</span>
+    <span class="nl">sayHi</span><span class="p">:</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Hello from the </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">lastName</span><span class="p">}</span><span class="s2">s`</span><span class="p">);</span>
+        <span class="c1">// console.log(`Hello from the ${myFamily.lastName}s`);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">myFamily</span><span class="p">.</span><span class="nx">sayHi</span><span class="p">();</span>
+
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">Object.assign</code>
+<code class="highlighter-rouge">Object.keys</code></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">journal</span> <span class="o">=</span> <span class="p">[];</span>
+
+<span class="kd">function</span> <span class="nx">addEntry</span><span class="p">(</span><span class="nx">events</span><span class="p">,</span> <span class="nx">squirrel</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">journal</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="nx">events</span><span class="p">,</span> <span class="nx">squirrel</span><span class="p">});</span>
+<span class="p">}</span>
+
+<span class="nx">addEntry</span><span class="p">([</span><span class="s2">"work"</span><span class="p">,</span> <span class="s2">"touched tree"</span><span class="p">,</span> <span class="s2">"pizza"</span><span class="p">,</span> <span class="s2">"running"</span><span class="p">,</span>
+          <span class="s2">"television"</span><span class="p">],</span> <span class="kc">false</span><span class="p">);</span>
+<span class="nx">addEntry</span><span class="p">([</span><span class="s2">"work"</span><span class="p">,</span> <span class="s2">"ice cream"</span><span class="p">,</span> <span class="s2">"cauliflower"</span><span class="p">,</span> <span class="s2">"lasagna"</span><span class="p">,</span>
+          <span class="s2">"touched tree"</span><span class="p">,</span> <span class="s2">"brushed teeth"</span><span class="p">],</span> <span class="kc">false</span><span class="p">);</span>
+
+
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">journal</span><span class="p">))</span>
+<span class="c1">// return [0,1] </span>
+</code></pre></div></div>
+
+<h2 id="factory-functions">Factory functions</h2>
+<p>In this example, mammal is a factory function. The job of a factory function is to create an individual instance of some model.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">mammal</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="nx">numEyes</span><span class="p">){</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span><span class="nx">name</span><span class="p">;</span>
+        <span class="nl">isWarmblooded</span><span class="p">:</span><span class="kc">true</span><span class="p">;</span>
+        <span class="nl">numEyes</span><span class="p">:</span><span class="nx">numEyes</span><span class="p">;</span>
+        <span class="nl">evolve</span><span class="p">:</span><span class="kd">function</span><span class="p">(){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm not mutating, I'm evolving"</span><span class="p">);</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">numEyes</span><span class="o">++</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="nl">explainYourSelf</span><span class="p">:</span><span class="kd">function</span><span class="p">({</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+            <span class="s2">`I'm just a </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2"> with </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">numEyes</span><span class="p">}</span><span class="s2"> eye(s). Nothing to see here`</span>
+        <span class="p">);</span>
+    <span class="p">}),</span>    
+<span class="p">};</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">tiger</span> <span class="o">=</span> <span class="nx">mammal</span><span class="p">(</span><span class="s1">'tiger'</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+<span class="nx">tiger</span><span class="p">.</span><span class="nx">explainYourSelf</span><span class="p">();</span>
+<span class="nx">tiger</span><span class="p">.</span><span class="nx">evolve</span><span class="p">();</span>
+<span class="nx">tiger</span><span class="p">.</span><span class="nx">explainYourSelf</span><span class="p">();</span>
+
+<span class="kd">const</span> <span class="nx">oneEyedBadger</span> <span class="o">=</span> <span class="nx">mammal</span><span class="p">(</span><span class="s1">'badger'</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="nx">oneEyedBadger</span><span class="p">.</span><span class="nx">explainYourSelf</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>In this challenge, you’ll practice <a href="https://en.wikipedia.org/wiki/Grok">grokking</a> (that is, understanding) code written by someone other than yourself.</p>
+
+<h2 id="question-to-ask">Question to ask</h2>
+
+<ul>
+  <li>Ask how the mechanism of the .sort() and function.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+myArray.sort((a,b)=&gt; a-b);
+
+
+function greatestToLeast(array) {
+  // your code goes here
+  return array.sort((a,b)=&gt;b-a);
+}
+</code></pre></div></div>
+<p>for the drilling, I was able to figure out if I change it from <code class="highlighter-rouge">a-b</code> to <code class="highlighter-rouge">b-a</code>, then it becomes from greatest to least.</p>
+
+<ul>
+  <li>
+    <p>discuss array methods with mentor.</p>
+  </li>
+  <li>
+    <p>If you use myVar = &lt;…&gt;, there will be no side effects; if you use myVar.someAttribute = &lt;…&gt;, there will be side effects. from Object lesson 3.</p>
+  </li>
+</ul>
+
+<h2 id="seminar">seminar</h2>
+
+<p>object</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let pet_info = {
+  "name":"Addie",
+  "weight": 6,
+  "happiness": 0,
+}
+
+console.log(pet_info['name'])
+</code></pre></div></div>
+<p>change value</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pet_info['name']="David"
+</code></pre></div></div>
+
+<p>…
+…</p>
+
+<h2 id="download-and-links">download and links</h2>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">mozilla javascript docs</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration">loop and iteration</a>
+<a href="https://designbygravity.wordpress.com/2009/10/23/how-to-read-other-peoples-code-and-why/">How to read other People’s code</a></p>
+
+<link src="mailto:rsmith@thinkful.com" />
+
+<h2 id="quiz">quiz</h2>
+
+<ul>
+  <li>
+    <p>Working with objects</p>
+  </li>
+  <li>
+    <p>Using factory functions to create instances of a model object</p>
+  </li>
+  <li>
+    <p>Explaining the difference between an object method and object property</p>
+  </li>
+  <li>
+    <p>Explaining why you need to be careful when passing objects as an argument to a function</p>
+  </li>
+  <li>
+    <p>Using the this keyword in object literals to achieve self-referentiality in your code</p>
+  </li>
+</ul>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/TmmGeekBlog/2019/02/05/thinkful-jquery-note/">Jquery note
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="/TmmGeekBlog/2019/02/02/javascript-code-collection/">Javascript code collection
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+                
+                    
+                
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="/TmmGeekBlog/2019/01/31/free-code-camp/">Free Code Camp Note
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/TmmGeekBlog/2019/01/18/css-note/">CSS Note</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/TmmGeekBlog/2019/01/19/responsive-design/">responsive design basics.</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="http://localhost:4000/2019/01/19/javascript-note/" data-title="Javascript Thinkful prep course note" data-url="http://localhost:4000/2019/01/19/javascript-note/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {
+        short_name: "tmmgeek"
+    };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/TmmGeekBlog/js/pageContent.js " charset="utf-8"></script>
+<!-- MathJax markdown script -->
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             Computer and Math related 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/JizongL" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:2015rpro@gmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+            <a href="http://weibo.com/ΤmmGeek" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a>  
+            <a href="https://www.zhihu.com/people/TmmGeek" title="Zhihu"><i class="iconfont icon-daoruzhihu"></i></a>  
+            <a href="https://twitter.com/JizongLiang" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>  
+            <a href="https://www.facebook.com/jizong.liang" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>   
+            <a href="https://www.linkedin.com/in/jizongliang" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  
+            <a href=" https://dribbble.com/JizongLiang" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> 
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" class="scroll">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src="/TmmGeekBlog /js/main.js " charset="utf-8"></script>
+    <script src="/TmmGeekBlog /js/scroll.min.js " charset="utf-8"></script>
+  </body>
+
+</html>

@@ -6,16 +6,16 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: TmmGeek
-brief-intro: Artificial Intelligence and Big Data student
-baseurl: "/TmmGeekBlog" # the subpath of your site, e.g. /blog
+title: DLS
+brief-intro: Web Development Journey
+baseurl: "/Thinkful_EI_Blog" # the subpath of your site, e.g. /blog
 url: "http://www.tmmlab.com" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: JizongLiang
-facebook_username: jizong.liang
+twitter_username: TmmGeek
+facebook_username:
 github_username:  JizongL
 email: 2015rpro@gmail.com
 weibo_username: ΤmmGeek
@@ -28,8 +28,8 @@ description_footer: Computer and Math related
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: tmmgeek
-disqus_shortname: #gaohaoyang
+duoshuo_shortname:
+disqus_shortname: jizong_liang
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
@@ -44,8 +44,8 @@ markdown: kramdown
 # highlighter: pygments
 contact_PK: 970b952628537ad7a2e389fdd91bd127
 
-# for mathjax markdown display, also see 
-redcarpet: 
+# for mathjax markdown display, also see
+redcarpet:
 
 extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 

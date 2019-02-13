@@ -3,18 +3,18 @@
   <channel>
     <title>DLS</title>
     <description></description>
-    <link>http://localhost:4000/Thinkful_EI_Blog/</link>
-    <atom:link href="http://localhost:4000/Thinkful_EI_Blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Feb 2019 15:42:57 -0500</pubDate>
-    <lastBuildDate>Wed, 13 Feb 2019 15:42:57 -0500</lastBuildDate>
+    <link>http://www.tmmlab.com/Thinkful_EI_Blog/</link>
+    <atom:link href="http://www.tmmlab.com/Thinkful_EI_Blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Feb 2019 15:48:02 -0500</pubDate>
+    <lastBuildDate>Wed, 13 Feb 2019 15:48:02 -0500</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
         <title></title>
         <description></description>
-        <pubDate>Wed, 13 Feb 2019 15:42:57 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/02/13/2019-02-09-javascript-correlation/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/02/13/2019-02-09-javascript-correlation/</guid>
+        <pubDate>Wed, 13 Feb 2019 15:48:02 -0500</pubDate>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/13/2019-02-09-javascript-correlation/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/13/2019-02-09-javascript-correlation/</guid>
         
         
       </item>
@@ -26,8 +26,8 @@
 
 </description>
         <pubDate>Tue, 12 Feb 2019 13:52:00 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/02/12/thinkful-ei-day-4/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/02/12/thinkful-ei-day-4/</guid>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/12/thinkful-ei-day-4/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/12/thinkful-ei-day-4/</guid>
         
         <category>thinkful EI_program jQuery javascript</category>
         
@@ -41,8 +41,8 @@
         <description>&lt;a href=&quot;https://en.wikipedia.org/wiki/Spaghetti_code&quot;&gt;Spaghetti code&lt;/a&gt;
 </description>
         <pubDate>Tue, 12 Feb 2019 13:52:00 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/02/12/thinkful-ei-day-3/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/02/12/thinkful-ei-day-3/</guid>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/12/thinkful-ei-day-3/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/12/thinkful-ei-day-3/</guid>
         
         <category>thinkful EI_program jQuery javascript</category>
         
@@ -94,8 +94,8 @@ allows us to attach a single event listener, to a parent element, that will fire
 5: How to plan a project with using Jquery, as it seems complicated when the program involves more and more functions and layouts.
 </description>
         <pubDate>Mon, 11 Feb 2019 13:47:00 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/02/11/thinkful-ei-day-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/02/11/thinkful-ei-day-2/</guid>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/11/thinkful-ei-day-2/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/11/thinkful-ei-day-2/</guid>
         
         <category>EI_program</category>
         
@@ -241,8 +241,8 @@ Auto create boiler plate
 Typing &lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt; and hitting &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;tab&amp;gt;&lt;/code&gt;
 </description>
         <pubDate>Sat, 09 Feb 2019 17:32:00 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/02/09/thinkful-ei-day-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/02/09/thinkful-ei-day-1/</guid>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/09/thinkful-ei-day-1/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/09/thinkful-ei-day-1/</guid>
         
         <category>EI_program</category>
         
@@ -262,8 +262,8 @@ See questions from the comment of the following links.
 
 </description>
         <pubDate>Wed, 06 Feb 2019 10:38:00 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/02/06/question-to-ask-memtor/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/02/06/question-to-ask-memtor/</guid>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/06/question-to-ask-memtor/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/06/question-to-ask-memtor/</guid>
         
         <category>question</category>
         
@@ -410,8 +410,8 @@ The following has two events, &lt;code class=&quot;highlighter-rouge&quot;&gt;cl
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 05 Feb 2019 17:43:00 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/02/05/thinkful-jquery-note/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/02/05/thinkful-jquery-note/</guid>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/05/thinkful-jquery-note/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/05/thinkful-jquery-note/</guid>
         
         <category>jquery</category>
         
@@ -443,8 +443,8 @@ This post contains my collection of code that solve various problems
 
 </description>
         <pubDate>Sat, 02 Feb 2019 12:45:00 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/02/02/javascript-code-collection/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/02/02/javascript-code-collection/</guid>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/02/javascript-code-collection/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/02/02/javascript-code-collection/</guid>
         
         <category>javascript</category>
         
@@ -475,8 +475,8 @@ This post contains my collection of code that solve various problems
 
 </description>
         <pubDate>Thu, 31 Jan 2019 16:40:00 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/01/31/free-code-camp/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/01/31/free-code-camp/</guid>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/01/31/free-code-camp/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/01/31/free-code-camp/</guid>
         
         <category>javascript</category>
         
@@ -490,8 +490,8 @@ This post contains my collection of code that solve various problems
         <description>
 </description>
         <pubDate>Thu, 31 Jan 2019 10:05:00 -0500</pubDate>
-        <link>http://localhost:4000/Thinkful_EI_Blog/2019/01/31/css-code-collection/</link>
-        <guid isPermaLink="true">http://localhost:4000/Thinkful_EI_Blog/2019/01/31/css-code-collection/</guid>
+        <link>http://www.tmmlab.com/Thinkful_EI_Blog/2019/01/31/css-code-collection/</link>
+        <guid isPermaLink="true">http://www.tmmlab.com/Thinkful_EI_Blog/2019/01/31/css-code-collection/</guid>
         
         <category>css</category>
         
